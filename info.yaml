@@ -2,7 +2,7 @@
 project:
   title:        "i4004"              # Project title
   author:       "Munetomo Maruyama"  # Your name
-  discord:      ""                   # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
+  discord:      "munetomo_85572"     # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
   description:  "MSC-4 i4004 CPU"    # One line description of what your project does
   language:     "Verilog" # other examples include SystemVerilog, Amaranth, VHDL, etc
   clock_hz:     1000000   # Clock frequency in Hz (or 0 if not applicable)
