@@ -8,7 +8,6 @@
 // Rev.01 2025.05.19 M.Maruyama First Release
 //-----------------------------------------------------------
 // Copyright (C) 2025 M.Maruyama
-// SPDX-License-Identifier: Apache-2.0
 //===========================================================
 
 `default_nettype none
@@ -47,7 +46,7 @@ integer i;
 //---------------------
 wire        sync_n;   // Sync Signal
 wire [ 3:0] data_o;   // Data Output
-wire [ 3:0] data_oe;  // Data Output Enable
+wire        data_oe;  // Data Output Enable
 wire [ 3:0] data_i;   // Data Input
 wire        cm_rom_n; // Memory Control for ROM
 wire [ 3:0] cm_ram_n; // Memory Control for RAM
@@ -59,13 +58,16 @@ wire        test;     // Test Input
 assign test = ui_in[0];
 assign uo_out[0] = sync_n;
 assign uo_out[1] = cm_rom_n;
-assign uo_out[2] = cm_ram_n;
+assign uo_out[2] = 1'b0;
 assign uo_out[3] = 1'b0;
-assign uo_out[7:4] = 4'h4;
+assign uo_out[4] = cm_ram_n[0];
+assign uo_out[5] = cm_ram_n[1];
+assign uo_out[6] = cm_ram_n[2];
+assign uo_out[7] = cm_ram_n[3];
 assign uio_out[3:0] = data_o;
 assign uio_out[7:4] = 4'h0;
 assign data_i = uio_in[3:0];
-assign uio_oe[3:0] = data_oe;
+assign uio_oe[3:0] = {4{data_oe}};
 assign uio_oe[7:4] = 4'h0;
 
 // List all unused inputs to prevent warnings
@@ -458,7 +460,7 @@ assign data_o = data_o_rom_addr
               | data_o_src
               | data_o_acc;
 //
-assign data_oe = state[`A1] | state[`A2] | state[`A2]
+assign data_oe = state[`A1] | state[`A2] | state[`A3]
                | data_o_src_at_x2 | data_o_src_at_x3
                | data_o_acc_at_x2;
                 

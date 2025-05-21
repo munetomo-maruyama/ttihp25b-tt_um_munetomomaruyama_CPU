@@ -1,0 +1,4 @@
+VCD info: dumpfile tb.vcd opened for output.
+***** STIMULAS FINISHED ***** at     810001
+***** SIMULATION TIMEOUT ***** at    2000000
+../mcs4_system/mcs4_tb.v:100: $finish called at 20000015000 (100ps)

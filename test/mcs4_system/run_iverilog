@@ -1,0 +1,8 @@
+#!/bin/bash
+
+export DIR_RTL_TBCH=../mcs4_system
+export DIR_RTL_BODY=../../src
+
+iverilog -v -o tb.vvp -c ${DIR_RTL_TBCH}/flist.txt -D IVERILOG -s MCS4_TB
+vvp tb.vvp > log
+
