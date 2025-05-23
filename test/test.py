@@ -28,6 +28,7 @@ async def test_project(dut):
     dut._log.info("Reset")
     dut.tb_res.value = 1
     dut.enable_keyprt.value = 1
+    dut.port_keyprt_cmd.value = 0x00000000
     await ClockCycles(dut.tb_clk, 10)
     dut.tb_res.value = 0
 
@@ -78,14 +79,14 @@ async def test_project(dut):
 
     dut.port_keyprt_cmd.value = 0x00008000 # FIFO POP
     await ClockCycles(dut.tb_clk, 4)
-    assert dut.port_keyprt_res.value == 0x80008401
+    assert dut.port_keyprt_res.value == 0x80028401 #r01:c14(1),c17(+)
     await ClockCycles(dut.tb_clk, 10000)
     dut.port_keyprt_cmd.value = 0x00000000 # off
     await ClockCycles(dut.tb_clk, 10000)
 
     dut.port_keyprt_cmd.value = 0x00008000 # FIFO POP
     await ClockCycles(dut.tb_clk, 4)
-    assert dut.port_keyprt_res.value == 0x80010801
+    assert dut.port_keyprt_res.value == 0x80010801 #r02:c15(2)
     await ClockCycles(dut.tb_clk, 10000)
     dut.port_keyprt_cmd.value = 0x00000000 # off
     await ClockCycles(dut.tb_clk, 10000)
