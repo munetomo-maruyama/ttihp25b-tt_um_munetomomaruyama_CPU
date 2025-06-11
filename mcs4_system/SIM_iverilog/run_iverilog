@@ -1,0 +1,10 @@
+#!/bin/bash
+
+export DIR_SIM=$PWD/../SIM_iverilog
+export DIR_RTL_SYS=$PWD/../RTL
+export DIR_RTL_SRC=$PWD/../../src
+
+rm -f tb.vpp
+iverilog -v -g2012 -o tb.vvp -c ${DIR_SIM}/flist.txt -D IVERILOG -s MCS4_TB
+vvp tb.vvp > log
+

@@ -37,7 +37,7 @@ end
 //------------------
 initial
 begin
-    $readmemh("./mcs4_system/4001.code", U_MCS4_MEM.U_MCS4_ROM.rom);
+    $readmemh("4001.code", U_MCS4_SYS.U_MCS4_ROM.rom);
 end
 
 //-------------------------
@@ -45,39 +45,77 @@ end
 //-------------------------
 initial
 begin
-    for (i = 0; i < 2048; i = i + 1) U_MCS4_MEM.U_MCS4_RAM.ram_ch[i] = 4'b0000;
-    for (i = 0; i <  512; i = i + 1) U_MCS4_MEM.U_MCS4_RAM.ram_st[i] = 4'b0000;    
+    for (i = 0; i < 2048; i = i + 1) U_MCS4_SYS.U_MCS4_RAM.ram_ch[i] = 4'b0000;
+    for (i = 0; i <  512; i = i + 1) U_MCS4_SYS.U_MCS4_RAM.ram_st[i] = 4'b0000;    
 end
 
 //-----------------------
-// Module Under Test
+// Signals in TestBench
 //-----------------------
 wire        tb_res;
 wire        tb_clk;
+//
 wire        sync_n;
 wire [ 3:0] data;
 wire        cm_rom_n;
 wire [ 3:0] cm_ram_n;
 wire        test;
 //
-wire [31:0] port_in_rom_chip7_chip0;
-wire [31:0] port_in_rom_chipF_chip8;
-wire [31:0] port_out_rom_chip7_chip0;
-wire [31:0] port_out_rom_chipF_chip8;
-wire [31:0] port_out_ram_bank1_bank0;
-wire [31:0] port_out_ram_bank3_bank2;
-wire [31:0] port_out_ram_bank5_bank4;
-wire [31:0] port_out_ram_bank7_bank6;
-//
-reg  enable_keyprt;
-wire test_keyprt;
-wire [31:0] port_in_rom_chip7_chip0_keyprt;
-wire [31:0] port_in_rom_chipF_chip8_keyprt;
-reg  [31:0] port_keyprt_cmd;
+wire [31:0] port_keyprt_cmd;
 wire [31:0] port_keyprt_res;
+
+//---------------------------------
+// MCS-4 CPU Chip i4004
+//---------------------------------
+wire [7:0] ui_in;    // Dedicated inputs
+wire [7:0] uo_out;   // Dedicated outputs
+wire [7:0] uio_in;   // IOs: Input path
+wire [7:0] uio_out;  // IOs: Output path
+wire [7:0] uio_oe;   // IOs: Enable path (active high: 0=input, 1=output)
+wire       ena;      // always 1 when the design is powered, so you can ignore it
+wire       clk;      // clock
+wire       rst_n;    // reset_n - low to reset
 //
-MCS4_CPU U_MCS4_CPU
+assign ui_in[0]    = test;
+assign sync_n      = uo_out[0];
+assign cm_rom_n    = uo_out[1];
+assign cm_ram_n[0] = uo_out[4];
+assign cm_ram_n[1] = uo_out[5];
+assign cm_ram_n[2] = uo_out[6];
+assign cm_ram_n[3] = uo_out[7];
+assign uio_in[0]   = data[0];
+assign uio_in[1]   = data[1];
+assign uio_in[2]   = data[2];
+assign uio_in[3]   = data[3];
+assign data[0]     = (uio_oe[0])? uio_out[0] : 1'bz; // open drain
+assign data[1]     = (uio_oe[1])? uio_out[1] : 1'bz; // open drain
+assign data[2]     = (uio_oe[2])? uio_out[2] : 1'bz; // open drain
+assign data[3]     = (uio_oe[3])? uio_out[3] : 1'bz; // open drain
+assign ena         = 1'b1;
+//
+pullup(data[0]);
+pullup(data[1]);
+pullup(data[2]);
+pullup(data[3]);
+//
+tt_um_munetomomaruyama_CPU U_CHIP
 (
+    .ui_in   (ui_in),    // Dedicated inputs
+    .uo_out  (uo_out),   // Dedicated outputs
+    .uio_in  (uio_in),   // IOs: Input path
+    .uio_out (uio_out),  // IOs: Output path
+    .uio_oe  (uio_oe),   // IOs: Enable path (active high: 0=input, 1=output)
+    .ena     (ena),      // always 1 when the design is powered, so you can ignore it
+    .clk     (tb_clk),   // clock
+    .rst_n   (~tb_res)   // reset_n - low to reset
+);
+
+//---------------------------------------------
+// MCS-4 System ROM + RAM + Key&Printer I/F
+//---------------------------------------------
+MCS4_SYS U_MCS4_SYS
+(
+    // CPU Interfface (i4004)
     .CLK   (tb_clk),  // clock
     .RES_N (~tb_res), // reset_n
     //
@@ -85,56 +123,16 @@ MCS4_CPU U_MCS4_CPU
     .DATA     (data),     // Data Input/Output
     .CM_ROM_N (cm_rom_n), // Memory Control for ROM
     .CM_RAM_N (cm_ram_n), // Memory Control for RAM
-    .TEST     (test)      // Test Input
-);
-//
-MCS4_MEM U_MCS4_MEM
-(
-    .CLK   (tb_clk),
-    .RES_N (~tb_res),
+    .TEST     (test),     // Test Input
     //
-    .SYNC_N   (sync_n),   // Sync Signal
-    .DATA     (data),     // Data Input/Output
-    .CM_ROM_N (cm_rom_n), // Memory Control for ROM
-    .CM_RAM_N (cm_ram_n), // Memory Control for RAM
-    //
-    .PORT_IN_ROM_CHIP7_CHIP0  (port_in_rom_chip7_chip0),
-    .PORT_IN_ROM_CHIPF_CHIP8  (port_in_rom_chipF_chip8),
-    .PORT_OUT_ROM_CHIP7_CHIP0 (port_out_rom_chip7_chip0),
-    .PORT_OUT_ROM_CHIPF_CHIP8 (port_out_rom_chipF_chip8),
-    .PORT_OUT_RAM_BANK1_BANK0 (port_out_ram_bank1_bank0),
-    .PORT_OUT_RAM_BANK3_BANK2 (port_out_ram_bank3_bank2),
-    .PORT_OUT_RAM_BANK5_BANK4 (port_out_ram_bank5_bank4),
-    .PORT_OUT_RAM_BANK7_BANK6 (port_out_ram_bank7_bank6)
-);
-//
-KEY_PRINTER KEY_PRINTER
-(
-    .CLK     (tb_clk),
-    .RES_N   (~tb_res),
-    .ENABLE  (enable_keyprt),
-    .TEST    (test_keyprt),
-    //
-    .PORT_IN_ROM_CHIP7_CHIP0  (port_in_rom_chip7_chip0_keyprt),
-    .PORT_IN_ROM_CHIPF_CHIP8  (port_in_rom_chipF_chip8_keyprt),
-    .PORT_OUT_ROM_CHIP7_CHIP0 (port_out_rom_chip7_chip0),
-    .PORT_OUT_ROM_CHIPF_CHIP8 (port_out_rom_chipF_chip8),
-    .PORT_OUT_RAM_BANK1_BANK0 (port_out_ram_bank1_bank0),
-    .PORT_OUT_RAM_BANK3_BANK2 (port_out_ram_bank3_bank2),
-    .PORT_OUT_RAM_BANK5_BANK4 (port_out_ram_bank5_bank4),
-    .PORT_OUT_RAM_BANK7_BANK6 (port_out_ram_bank7_bank6),
-    //
+    // Calculator Command : Host MCU (UI) --> MCS4_SYS
     .PORT_KEYPRT_CMD (port_keyprt_cmd),
+    //
+    // Calculator Response : MCS4_SYS --> Host MCU (UI)
     .PORT_KEYPRT_RES (port_keyprt_res)
 );
 
-//--------------
-// Port In
-//--------------
-assign test = (enable_keyprt)? test_keyprt : 1'b0;
-assign port_in_rom_chip7_chip0 = (enable_keyprt)? port_in_rom_chip7_chip0_keyprt : 32'h76543210;
-assign port_in_rom_chipF_chip8 = (enable_keyprt)? port_in_rom_chipF_chip8_keyprt : 32'hfedcba98;
-
-//===========================================================
 endmodule
+//===========================================================
+// End of File
 //===========================================================

@@ -1,105 +1,108 @@
 [*]
 [*] GTKWave Analyzer v3.3.100 (w)1999-2019 BSI
-[*] Wed May 21 16:11:07 2025
+[*] Sat May 31 14:14:28 2025
 [*]
 [dumpfile] "\\wsl.localhost\Ubuntu-24.04\home\taka\TinyTapeout\ttihp25b-tt_um_munetomomaruyama_CPU\test\tb.vcd"
-[dumpfile_mtime] "Wed May 21 16:09:52 2025"
-[dumpfile_size] 415834079
+[dumpfile_mtime] "Sat May 31 14:13:53 2025"
+[dumpfile_size] 420235149
 [savefile] "\\wsl.localhost\Ubuntu-24.04\home\taka\TinyTapeout\ttihp25b-tt_um_munetomomaruyama_CPU\test\tb.gtkw"
 [timestart] 0
 [size] 1920 1004
-[pos] -1 -1
-*-38.339924 1003000000000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[pos] -217 -257
+*-38.323776 25001748000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
 [treeopen] tb.
-[treeopen] tb.U_MCS4_CPU.
+[treeopen] tb.U_CHIP.
+[treeopen] tb.U_MCS4_SYS.
 [sst_width] 211
 [signals_width] 270
 [sst_expanded] 1
 [sst_vpaned_height] 296
 @28
-tb.U_MCS4_CPU.CLK
+tb.U_CHIP.U_MCS4_CPU_CORE.CLK
 @22
-tb.U_MCS4_CPU.CM_RAM_N[3:0]
+tb.U_CHIP.U_MCS4_CPU_CORE.CM_RAM_N[3:0]
 @28
-tb.U_MCS4_CPU.CM_ROM_N
+tb.U_CHIP.U_MCS4_CPU_CORE.CM_ROM_N
 @22
-tb.U_MCS4_CPU.DATA[3:0]
+tb.U_CHIP.U_MCS4_CPU_CORE.DATA_I[3:0]
 @28
-tb.U_MCS4_CPU.RES_N
-tb.U_MCS4_CPU.SYNC_N
-tb.U_MCS4_CPU.TEST
-tb.KEY_PRINTER.CLK
-tb.KEY_PRINTER.ENABLE
+tb.U_CHIP.U_MCS4_CPU_CORE.DATA_OE
 @22
-tb.KEY_PRINTER.PORT_IN_ROM_CHIP7_CHIP0[31:0]
-tb.KEY_PRINTER.PORT_IN_ROM_CHIPF_CHIP8[31:0]
-@23
-tb.KEY_PRINTER.PORT_KEYPRT_CMD[31:0]
-@22
-tb.KEY_PRINTER.PORT_KEYPRT_RES[31:0]
-tb.KEY_PRINTER.PORT_OUT_RAM_BANK1_BANK0[31:0]
-tb.KEY_PRINTER.PORT_OUT_RAM_BANK3_BANK2[31:0]
-tb.KEY_PRINTER.PORT_OUT_RAM_BANK5_BANK4[31:0]
-tb.KEY_PRINTER.PORT_OUT_RAM_BANK7_BANK6[31:0]
-tb.KEY_PRINTER.PORT_OUT_ROM_CHIP7_CHIP0[31:0]
-tb.KEY_PRINTER.PORT_OUT_ROM_CHIPF_CHIP8[31:0]
+tb.U_CHIP.U_MCS4_CPU_CORE.DATA_O[3:0]
 @28
-tb.KEY_PRINTER.RES_N
-tb.KEY_PRINTER.TEST
+tb.U_CHIP.U_MCS4_CPU_CORE.RES_N
+tb.U_CHIP.U_MCS4_CPU_CORE.SYNC_N
+tb.U_CHIP.U_MCS4_CPU_CORE.TEST
+tb.U_MCS4_SYS.KEY_PRINTER.CLK
+tb.U_MCS4_SYS.KEY_PRINTER.ENABLE
 @22
-tb.KEY_PRINTER.key_column[9:0]
-tb.KEY_PRINTER.key_row[3:0]
+tb.U_MCS4_SYS.KEY_PRINTER.PORT_IN_ROM_CHIP7_CHIP0[31:0]
+tb.U_MCS4_SYS.KEY_PRINTER.PORT_IN_ROM_CHIPF_CHIP8[31:0]
+tb.U_MCS4_SYS.KEY_PRINTER.PORT_KEYPRT_CMD[31:0]
+tb.U_MCS4_SYS.KEY_PRINTER.PORT_KEYPRT_RES[31:0]
+tb.U_MCS4_SYS.KEY_PRINTER.PORT_OUT_RAM_BANK1_BANK0[31:0]
+tb.U_MCS4_SYS.KEY_PRINTER.PORT_OUT_RAM_BANK3_BANK2[31:0]
+tb.U_MCS4_SYS.KEY_PRINTER.PORT_OUT_RAM_BANK5_BANK4[31:0]
+tb.U_MCS4_SYS.KEY_PRINTER.PORT_OUT_RAM_BANK7_BANK6[31:0]
+tb.U_MCS4_SYS.KEY_PRINTER.PORT_OUT_ROM_CHIP7_CHIP0[31:0]
+tb.U_MCS4_SYS.KEY_PRINTER.PORT_OUT_ROM_CHIPF_CHIP8[31:0]
 @28
-tb.KEY_PRINTER.lamp_memory
-tb.KEY_PRINTER.lamp_minus
-tb.KEY_PRINTER.lamp_overflow
+tb.U_MCS4_SYS.KEY_PRINTER.RES_N
+tb.U_MCS4_SYS.KEY_PRINTER.TEST
 @22
-tb.KEY_PRINTER.prt_clkcnt[15:0]
+tb.U_MCS4_SYS.KEY_PRINTER.key_column[9:0]
+tb.U_MCS4_SYS.KEY_PRINTER.key_row[3:0]
 @28
-tb.KEY_PRINTER.prt_color
-tb.KEY_PRINTER.prt_color_delay
+tb.U_MCS4_SYS.KEY_PRINTER.lamp_memory
+tb.U_MCS4_SYS.KEY_PRINTER.lamp_minus
+tb.U_MCS4_SYS.KEY_PRINTER.lamp_overflow
 @22
-tb.KEY_PRINTER.prt_column[16:0]
-tb.KEY_PRINTER.prt_drum_count[3:0]
+tb.U_MCS4_SYS.KEY_PRINTER.prt_clkcnt[15:0]
 @28
-tb.KEY_PRINTER.prt_drum_row_each
-tb.KEY_PRINTER.prt_drum_row_first
-tb.KEY_PRINTER.prt_drum_row_last
+tb.U_MCS4_SYS.KEY_PRINTER.prt_color
+tb.U_MCS4_SYS.KEY_PRINTER.prt_color_delay
 @22
-tb.KEY_PRINTER.prt_fifo_dc[8:0]
+tb.U_MCS4_SYS.KEY_PRINTER.prt_column[16:0]
+tb.U_MCS4_SYS.KEY_PRINTER.prt_drum_count[3:0]
 @28
-tb.KEY_PRINTER.prt_fifo_empty
-tb.KEY_PRINTER.prt_fifo_full
-tb.KEY_PRINTER.prt_fifo_pop
-tb.KEY_PRINTER.prt_fifo_pop_sync[2:0]
+tb.U_MCS4_SYS.KEY_PRINTER.prt_drum_row_each
+tb.U_MCS4_SYS.KEY_PRINTER.prt_drum_row_first
+tb.U_MCS4_SYS.KEY_PRINTER.prt_drum_row_last
 @22
-tb.KEY_PRINTER.prt_fifo_rdata[22:0]
+tb.U_MCS4_SYS.KEY_PRINTER.prt_fifo_dc[8:0]
 @28
-tb.KEY_PRINTER.prt_fifo_re
+tb.U_MCS4_SYS.KEY_PRINTER.prt_fifo_empty
+tb.U_MCS4_SYS.KEY_PRINTER.prt_fifo_full
+tb.U_MCS4_SYS.KEY_PRINTER.prt_fifo_pop
+tb.U_MCS4_SYS.KEY_PRINTER.prt_fifo_pop_sync[2:0]
 @22
-tb.KEY_PRINTER.prt_fifo_rp[7:0]
-tb.KEY_PRINTER.prt_fifo_wdata[22:0]
+tb.U_MCS4_SYS.KEY_PRINTER.prt_fifo_rdata[22:0]
 @28
-tb.KEY_PRINTER.prt_fifo_we
+tb.U_MCS4_SYS.KEY_PRINTER.prt_fifo_re
 @22
-tb.KEY_PRINTER.prt_fifo_wp[7:0]
+tb.U_MCS4_SYS.KEY_PRINTER.prt_fifo_rp[7:0]
+tb.U_MCS4_SYS.KEY_PRINTER.prt_fifo_wdata[22:0]
 @28
-tb.KEY_PRINTER.prt_hammer
-tb.KEY_PRINTER.prt_hammer_delay
-tb.KEY_PRINTER.prt_paper_feed
-tb.KEY_PRINTER.prt_paper_feed_delay
-tb.KEY_PRINTER.prt_paper_feed_req
+tb.U_MCS4_SYS.KEY_PRINTER.prt_fifo_we
 @22
-tb.KEY_PRINTER.prt_q0[9:0]
-tb.KEY_PRINTER.prt_q1[9:0]
+tb.U_MCS4_SYS.KEY_PRINTER.prt_fifo_wp[7:0]
 @28
-tb.KEY_PRINTER.prt_tick
+tb.U_MCS4_SYS.KEY_PRINTER.prt_hammer
+tb.U_MCS4_SYS.KEY_PRINTER.prt_hammer_delay
+tb.U_MCS4_SYS.KEY_PRINTER.prt_paper_feed
+tb.U_MCS4_SYS.KEY_PRINTER.prt_paper_feed_delay
+tb.U_MCS4_SYS.KEY_PRINTER.prt_paper_feed_req
 @22
-tb.KEY_PRINTER.prt_tick_count[4:0]
+tb.U_MCS4_SYS.KEY_PRINTER.prt_q0[9:0]
+tb.U_MCS4_SYS.KEY_PRINTER.prt_q1[9:0]
 @28
-tb.KEY_PRINTER.sck_key
-tb.KEY_PRINTER.sck_prt
-tb.KEY_PRINTER.sdi_common
-tb.KEY_PRINTER.sft_cascade
+tb.U_MCS4_SYS.KEY_PRINTER.prt_tick
+@22
+tb.U_MCS4_SYS.KEY_PRINTER.prt_tick_count[4:0]
+@28
+tb.U_MCS4_SYS.KEY_PRINTER.sck_key
+tb.U_MCS4_SYS.KEY_PRINTER.sck_prt
+tb.U_MCS4_SYS.KEY_PRINTER.sdi_common
+tb.U_MCS4_SYS.KEY_PRINTER.sft_cascade
 [pattern_trace] 1
 [pattern_trace] 0

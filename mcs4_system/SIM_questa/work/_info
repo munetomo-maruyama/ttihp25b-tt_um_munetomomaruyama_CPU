@@ -1,0 +1,1966 @@
+m255
+K4
+z2
+Z0 !s99 nomlopt
+R0
+R0
+R0
+R0
+!s11f vlog 2021.2 2021.04, Apr 14 2021
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z1 d//wsl.localhost/Ubuntu-24.04/home/taka/TinyTapeout/ttihp25b-tt_um_munetomomaruyama_CPU/mcs4_system/SIM_questa
+T_opt
+!s110 1748955698
+VQU;YQSUd_iH`0dm546LoO3
+04 6 4 work tb_TOP fast 0
+=1-dc7196e13b6a-683ef22f-239-1b58
+!s124 OEM10U150 
+o-quiet -auto_acc_if_foreign -work work -L altera_mf_ver +acc
+Z2 tCvgOpt 0
+n@_opt
+OL;O;2021.2;73
+vAHB_ARB
+Z3 DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
+Z4 !s110 1748955688
+!i10b 1
+!s100 eaN94b>U]PA5R74FbKhHa3
+ICn;oCJ@ah8]5F892Ic=Pc0
+S1
+R1
+Z5 w1748183008
+Z6 8../RTL/RISCV/ahb_matrix/ahb_arb.v
+Z7 F../RTL/RISCV/ahb_matrix/ahb_arb.v
+!i122 6
+L0 16 188
+Z8 VDg1SIo80bB@j0V0VzS_@n1
+Z9 OL;L;2021.2;73
+r1
+!s85 0
+31
+Z10 !s108 1748955686.000000
+Z11 !s107 ../RTL/RISCV/common/defines_chip.v|../RTL/RISCV/i2c/i2c/trunk/rtl/verilog/i2c_master_defines.v|../RTL/RISCV/i2c/i2c/trunk/rtl/verilog/timescale.v|../RTL/RISCV/ahb_sdram/model/sdr_parameters.vh|../RTL/RISCV/common/defines_core.v|../SIM_questa/tb_TOP.v|../FPGA/PLL.v|../RTL/FPGA_TOP/fpga_top.v|../RTL/RISCV/riscv_top/riscv_top.v|../RTL/RISCV/spi/simple_spi/trunk/rtl/verilog/fifo4.v|../RTL/RISCV/spi/simple_spi/trunk/rtl/verilog/simple_spi_top.v|../RTL/RISCV/spi/spi.v|../RTL/RISCV/i2c/i2c_slave_model.v|../RTL/RISCV/i2c/i2c/trunk/rtl/verilog/i2c_master_byte_ctrl.v|../RTL/RISCV/i2c/i2c/trunk/rtl/verilog/i2c_master_bit_ctrl.v|../RTL/RISCV/i2c/i2c/trunk/rtl/verilog/i2c_master_top.v|../RTL/RISCV/i2c/i2c.v|../RTL/RISCV/uart/sasc/trunk/rtl/verilog/sasc_brg.v|../RTL/RISCV/uart/sasc/trunk/rtl/verilog/sasc_fifo4.v|../RTL/RISCV/uart/sasc/trunk/rtl/verilog/sasc_top.v|../RTL/RISCV/uart/uart.v|../RTL/RISCV/port/port.v|../FPGA/RAM128KB_DP.v|../RTL/RISCV/ram/ram_fpga.v|../RTL/RISCV/ram/ram.v|../RTL/RISCV/ahb_sdram/model/sdr.v|../RTL/RISCV/ahb_sdram/logic/ahb_lite_sdram.v|../RTL/RISCV/ahb_matrix/ahb_arb.v|../RTL/RISCV/ahb_matrix/ahb_interconnect.v|../RTL/RISCV/ahb_matrix/ahb_slave_port.v|../RTL/RISCV/ahb_matrix/ahb_master_port.v|../RTL/RISCV/ahb_matrix/ahb_top.v|../RTL/RISCV/int_gen/int_gen.v|../RTL/RISCV/debug/debug_dm.v|../RTL/RISCV/debug/debug_cdc.v|../RTL/RISCV/debug/debug_dtm_jtag.v|../RTL/RISCV/debug/debug_top.v|../RTL/RISCV/cpu/cpu_debug.v|../RTL/RISCV/cpu/cpu_csr_dbg.v|../RTL/RISCV/cpu/cpu_csr_int.v|../RTL/RISCV/cpu/cpu_csr.v|../RTL/RISCV/cpu/cpu_fpu32.v|../RTL/RISCV/cpu/cpu_pipeline.v|../RTL/RISCV/cpu/cpu_datapath.v|../RTL/RISCV/cpu/cpu_fetch.v|../RTL/RISCV/cpu/cpu_top.v|../RTL/RISCV/mmRISC/csr_mtime.v|../RTL/RISCV/mmRISC/bus_m_ahb.v|../RTL/RISCV/mmRISC/mmRISC.v|../RTL/MCS4/mcs4_shifter.v|../RTL/MCS4/key_printer.v|../RTL/MCS4/mcs4_ram.v|../FPGA/ROM4KB_SP.v|../RTL/MCS4/mcs4_rom_fpga.v|../RTL/MCS4/mcs4_sys.v|../RTL/MCS4/mcs4_cpu_core.v|../RTL/MCS4/mcs4_cpu_chip.v|../../src/tt_um_munetomomaruyama_CPU.v|
+Z12 !s90 -reportprogress|300|-work|work|-sv|+incdir+../RTL/RISCV/common|+incdir+../RTL/RISCV/ahb_sdram/model|+incdir+../RTL/RISCV/i2c/i2c/trunk/rtl/verilog|-timescale=1ns/100ps|+define+SIMULATION|+define+FPGA|+define+den512Mb|+define+sg75|+define+x16|../../src/tt_um_munetomomaruyama_CPU.v|../RTL/MCS4/mcs4_cpu_chip.v|../RTL/MCS4/mcs4_cpu_core.v|../RTL/MCS4/mcs4_sys.v|../RTL/MCS4/mcs4_rom_fpga.v|../FPGA/ROM4KB_SP.v|../RTL/MCS4/mcs4_ram.v|../RTL/MCS4/key_printer.v|../RTL/MCS4/mcs4_shifter.v|../RTL/RISCV/mmRISC/mmRISC.v|../RTL/RISCV/mmRISC/bus_m_ahb.v|../RTL/RISCV/mmRISC/csr_mtime.v|../RTL/RISCV/cpu/cpu_top.v|../RTL/RISCV/cpu/cpu_fetch.v|../RTL/RISCV/cpu/cpu_datapath.v|../RTL/RISCV/cpu/cpu_pipeline.v|../RTL/RISCV/cpu/cpu_fpu32.v|../RTL/RISCV/cpu/cpu_csr.v|../RTL/RISCV/cpu/cpu_csr_int.v|../RTL/RISCV/cpu/cpu_csr_dbg.v|../RTL/RISCV/cpu/cpu_debug.v|../RTL/RISCV/debug/debug_top.v|../RTL/RISCV/debug/debug_dtm_jtag.v|../RTL/RISCV/debug/debug_cdc.v|../RTL/RISCV/debug/debug_dm.v|../RTL/RISCV/int_gen/int_gen.v|../RTL/RISCV/ahb_matrix/ahb_top.v|../RTL/RISCV/ahb_matrix/ahb_master_port.v|../RTL/RISCV/ahb_matrix/ahb_slave_port.v|../RTL/RISCV/ahb_matrix/ahb_interconnect.v|../RTL/RISCV/ahb_matrix/ahb_arb.v|../RTL/RISCV/ahb_sdram/logic/ahb_lite_sdram.v|../RTL/RISCV/ahb_sdram/model/sdr.v|../RTL/RISCV/ram/ram.v|../RTL/RISCV/ram/ram_fpga.v|../FPGA/RAM128KB_DP.v|../RTL/RISCV/port/port.v|../RTL/RISCV/uart/uart.v|../RTL/RISCV/uart/sasc/trunk/rtl/verilog/sasc_top.v|../RTL/RISCV/uart/sasc/trunk/rtl/verilog/sasc_fifo4.v|../RTL/RISCV/uart/sasc/trunk/rtl/verilog/sasc_brg.v|../RTL/RISCV/i2c/i2c.v|../RTL/RISCV/i2c/i2c/trunk/rtl/verilog/i2c_master_top.v|../RTL/RISCV/i2c/i2c/trunk/rtl/verilog/i2c_master_bit_ctrl.v|../RTL/RISCV/i2c/i2c/trunk/rtl/verilog/i2c_master_byte_ctrl.v|../RTL/RISCV/i2c/i2c_slave_model.v|../RTL/RISCV/spi/spi.v|../RTL/RISCV/spi/simple_spi/trunk/rtl/verilog/simple_spi_top.v|../RTL/RISCV/spi/simple_spi/trunk/rtl/verilog/fifo4.v|../RTL/RISCV/riscv_top/riscv_top.v|../RTL/FPGA_TOP/fpga_top.v|../FPGA/PLL.v|../SIM_questa/tb_TOP.v|
+!i113 0
+Z13 o-work work -sv -timescale=1ns/100ps -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z14 !s92 -work work -sv +incdir+../RTL/RISCV/common +incdir+../RTL/RISCV/ahb_sdram/model +incdir+../RTL/RISCV/i2c/i2c/trunk/rtl/verilog -timescale=1ns/100ps +define+SIMULATION +define+FPGA +define+den512Mb +define+sg75 +define+x16 -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R2
+n@a@h@b_@a@r@b
+vAHB_ARB_RB
+R3
+R4
+!i10b 1
+!s100 AZ7fP0fVd>ieWXamQ5;5k1
+I9SRK<C^9`171Q2gAY[l4>2
+S1
+R1
+R5
+R6
+R7
+!i122 6
+L0 208 73
+R8
+R9
+r1
+!s85 0
+31
+R10
+R11
+R12
+!i113 0
+R13
+R14
+R2
+n@a@h@b_@a@r@b_@r@b
+vAHB_INTERCONNECT
+R3
+R4
+!i10b 1
+!s100 fNYem:X9g8KQa>:<Kz;2j2
+I_=EP5?GG3^AjA^`S90P`11
+S1
+R1
+R5
+8../RTL/RISCV/ahb_matrix/ahb_interconnect.v
+F../RTL/RISCV/ahb_matrix/ahb_interconnect.v
+!i122 6
+L0 16 420
+R8
+R9
+r1
+!s85 0
+31
+R10
+R11
+R12
+!i113 0
+R13
+R14
+R2
+n@a@h@b_@i@n@t@e@r@c@o@n@n@e@c@t
+vahb_lite_sdram
+R3
+R4
+!i10b 1
+!s100 afo3CY_@W]=lY]l0^UccV0
+Io@STcdQQbQn^<U>mbnO^@0
+S1
+R1
+R5
+8../RTL/RISCV/ahb_sdram/logic/ahb_lite_sdram.v
+F../RTL/RISCV/ahb_sdram/logic/ahb_lite_sdram.v
+!i122 6
+L0 6 304
+R8
+R9
+r1
+!s85 0
+31
+R10
+R11
+R12
+!i113 0
+R13
+R14
+R2
+vAHB_MASTER_PORT
+R3
+R4
+!i10b 1
+!s100 6mS;d_e[9^X35odV@MIl@0
+I]HoB1gP;N6KEdHF2nGIH`2
+S1
+R1
+R5
+8../RTL/RISCV/ahb_matrix/ahb_master_port.v
+F../RTL/RISCV/ahb_matrix/ahb_master_port.v
+!i122 6
+L0 16 179
+R8
+R9
+r1
+!s85 0
+31
+R10
+R11
+R12
+!i113 0
+R13
+R14
+R2
+n@a@h@b_@m@a@s@t@e@r_@p@o@r@t
+vAHB_MATRIX
+R3
+R4
+!i10b 1
+!s100 CMJnW33J9jM5eANA9ZezC2
+I2DTiOG`@D@DeTEbdLiB^_0
+S1
+R1
+R5
+8../RTL/RISCV/ahb_matrix/ahb_top.v
+F../RTL/RISCV/ahb_matrix/ahb_top.v
+!i122 6
+L0 16 249
+R8
+R9
+r1
+!s85 0
+31
+R10
+R11
+R12
+!i113 0
+R13
+R14
+R2
+n@a@h@b_@m@a@t@r@i@x
+vAHB_SLAVE_PORT
+R3
+R4
+!i10b 1
+!s100 VGhV_RB>Yi2EV<?SY`@dA3
+IBFo:o6lio5dNT4[K1n3ZZ3
+S1
+R1
+R5
+8../RTL/RISCV/ahb_matrix/ahb_slave_port.v
+F../RTL/RISCV/ahb_matrix/ahb_slave_port.v
+!i122 6
+L0 16 194
+R8
+R9
+r1
+!s85 0
+31
+R10
+R11
+R12
+!i113 0
+R13
+R14
+R2
+n@a@h@b_@s@l@a@v@e_@p@o@r@t
+vBUS_M_AHB
+R3
+Z15 !s110 1748955687
+!i10b 1
+!s100 ?U@UaZ:O8@aFb`e1ed<L;0
+I<R3fncB`WjlL6fHK]79Z`0
+S1
+R1
+R5
+8../RTL/RISCV/mmRISC/bus_m_ahb.v
+F../RTL/RISCV/mmRISC/bus_m_ahb.v
+!i122 6
+L0 16 251
+R8
+R9
+r1
+!s85 0
+31
+R10
+R11
+R12
+!i113 0
+R13
+R14
+R2
+n@b@u@s_@m_@a@h@b
+vCHECK_FTYPE
+R3
+R15
+!i10b 1
+!s100 H9=GT4=olN760jjLEYF^`2
+IH0X7L8P>SRPQ?9eOBD6UB0
+S1
+R1
+R5
+Z16 8../RTL/RISCV/cpu/cpu_fpu32.v
+Z17 F../RTL/RISCV/cpu/cpu_fpu32.v
+!i122 6
+L0 2413 44
+R8
+R9
+r1
+!s85 0
+31
+R10
+R11
+R12
+!i113 0
+R13
+R14
+R2
+n@c@h@e@c@k_@f@t@y@p@e
+vCPU_CSR
+R3
+R4
+!i10b 1
+!s100 ?@Gllc>gMaN_aB5XU=TI_2
+Iz6icD07><j@D1bVaD]0L_3
+S1
+R1
+R5
+8../RTL/RISCV/cpu/cpu_csr.v
+F../RTL/RISCV/cpu/cpu_csr.v
+!i122 6
+L0 168 788
+R8
+R9
+r1
+!s85 0
+31
+R10
+R11
+R12
+!i113 0
+R13
+R14
+R2
+n@c@p@u_@c@s@r
+vCPU_CSR_DBG
+R3
+R4
+!i10b 1
+!s100 Q606Qc1TMGbzf^eIG=khz2
+I2D47<lQJJbI^ZzZ3PKYAT0
+S1
+R1
+R5
+8../RTL/RISCV/cpu/cpu_csr_dbg.v
+F../RTL/RISCV/cpu/cpu_csr_dbg.v
+!i122 6
+L0 82 905
+R8
+R9
+r1
+!s85 0
+31
+R10
+R11
+R12
+!i113 0
+R13
+R14
+R2
+n@c@p@u_@c@s@r_@d@b@g
+vCPU_CSR_INT
+R3
+R4
+!i10b 1
+!s100 3INMJ_^f4=Pa@D_XkIKo@2
+I[^GnNGgAY3`]SWcniYJkN1
+S1
+R1
+R5
+8../RTL/RISCV/cpu/cpu_csr_int.v
+F../RTL/RISCV/cpu/cpu_csr_int.v
+!i122 6
+L0 50 557
+R8
+R9
+r1
+!s85 0
+31
+R10
+R11
+R12
+!i113 0
+R13
+R14
+R2
+n@c@p@u_@c@s@r_@i@n@t
+vCPU_DATAPATH
+R3
+R15
+!i10b 1
+!s100 mmMOm`z0c;dh>nec>R74:3
+II6@N6ceY6AW]aIM>ZQfXR0
+S1
+R1
+R5
+8../RTL/RISCV/cpu/cpu_datapath.v
+F../RTL/RISCV/cpu/cpu_datapath.v
+!i122 6
+L0 18 815
+R8
+R9
+r1
+!s85 0
+31
+R10
+R11
+R12
+!i113 0
+R13
+R14
+R2
+n@c@p@u_@d@a@t@a@p@a@t@h
+vCPU_DEBUG
+R3
+R4
+!i10b 1
+!s100 MBS6<K3kK:=>;Tz@P0]4`1
+IcS;VhoElM4`dU0@`Z_cQW2
+S1
+R1
+R5
+8../RTL/RISCV/cpu/cpu_debug.v
+F../RTL/RISCV/cpu/cpu_debug.v
+!i122 6
+L0 18 794
+R8
+R9
+r1
+!s85 0
+31
+R10
+R11
+R12
+!i113 0
+R13
+R14
+R2
+n@c@p@u_@d@e@b@u@g
+vCPU_FETCH
+R3
+R15
+!i10b 1
+!s100 4D6b:MgWBF;gfaMB>c^4z3
+IiN^Fe=60Hh1IWeZ8>T9LV2
+S1
+R1
+R5
+8../RTL/RISCV/cpu/cpu_fetch.v
+F../RTL/RISCV/cpu/cpu_fetch.v
+!i122 6
+L0 128 582
+R8
+R9
+r1
+!s85 0
+31
+R10
+R11
+R12
+!i113 0
+R13
+R14
+R2
+n@c@p@u_@f@e@t@c@h
+vCPU_FPU32
+R3
+R15
+!i10b 1
+!s100 eiX^noHWKNF:FH7Y9@m@Q3
+I2V4IKTTdG4dZG[V7400WP0
+S1
+R1
+R5
+R16
+R17
+!i122 6
+L0 89 2319
+R8
+R9
+r1
+!s85 0
+31
+R10
+R11
+R12
+!i113 0
+R13
+R14
+R2
+n@c@p@u_@f@p@u32
+vCPU_PIPELINE
+R3
+R15
+!i10b 1
+!s100 4Ki:mPSTVW3iXHFZ2BaRO2
+IncoJGVhH^A=AZbFL]PSLm3
+S1
+R1
+R5
+8../RTL/RISCV/cpu/cpu_pipeline.v
+F../RTL/RISCV/cpu/cpu_pipeline.v
+!i122 6
+L0 80 2583
+R8
+R9
+r1
+!s85 0
+31
+R10
+R11
+R12
+!i113 0
+R13
+R14
+R2
+n@c@p@u_@p@i@p@e@l@i@n@e
+vCPU_TOP
+R3
+R15
+!i10b 1
+!s100 KX][XJBSa=C<[gPBIk5n?2
+IWo]zmP0Y4DEND0V0nZaME0
+S1
+R1
+R5
+8../RTL/RISCV/cpu/cpu_top.v
+F../RTL/RISCV/cpu/cpu_top.v
+!i122 6
+L0 20 1010
+R8
+R9
+r1
+!s85 0
+31
+R10
+R11
+R12
+!i113 0
+R13
+R14
+R2
+n@c@p@u_@t@o@p
+vCSR_MTIME
+R3
+R15
+!i10b 1
+!s100 1[n`kQ]:>7ST?fX[KagQj2
+I`MaGo:LX?fC>H7=kTG8B:3
+S1
+R1
+R5
+8../RTL/RISCV/mmRISC/csr_mtime.v
+F../RTL/RISCV/mmRISC/csr_mtime.v
+!i122 6
+L0 59 307
+R8
+R9
+r1
+!s85 0
+31
+R10
+R11
+R12
+!i113 0
+R13
+R14
+R2
+n@c@s@r_@m@t@i@m@e
+vDEBUG_CDC
+R3
+R4
+!i10b 1
+!s100 KFRF:l`9?@mbj^GFMCY9a2
+IadiFA7h:KbeXnhFlJzeFQ0
+S1
+R1
+R5
+8../RTL/RISCV/debug/debug_cdc.v
+F../RTL/RISCV/debug/debug_cdc.v
+!i122 6
+L0 14 111
+R8
+R9
+r1
+!s85 0
+31
+R10
+R11
+R12
+!i113 0
+R13
+R14
+R2
+n@d@e@b@u@g_@c@d@c
+vDEBUG_DM
+R3
+R4
+!i10b 1
+!s100 7AA`V];XSKW0FFF_3zzVJ0
+Id2f2l61PoT_7IhTU4XWee1
+S1
+R1
+R5
+8../RTL/RISCV/debug/debug_dm.v
+F../RTL/RISCV/debug/debug_dm.v
+!i122 6
+L0 99 1403
+R8
+R9
+r1
+!s85 0
+31
+R10
+R11
+R12
+!i113 0
+R13
+R14
+R2
+n@d@e@b@u@g_@d@m
+vDEBUG_DTM_JTAG
+R3
+R4
+!i10b 1
+!s100 DV98;heJb0JXlGMjPTNEB2
+I=L6Z=f129H>;jQ8623`R22
+S1
+R1
+R5
+8../RTL/RISCV/debug/debug_dtm_jtag.v
+F../RTL/RISCV/debug/debug_dtm_jtag.v
+!i122 6
+L0 33 504
+R8
+R9
+r1
+!s85 0
+31
+R10
+R11
+R12
+!i113 0
+R13
+R14
+R2
+n@d@e@b@u@g_@d@t@m_@j@t@a@g
+vDEBUG_TOP
+R3
+R4
+!i10b 1
+!s100 jGKBT6=E@T9L<UHER1De90
+IQF8U:Icn@MVcm8QCghDFO3
+S1
+R1
+R5
+8../RTL/RISCV/debug/debug_top.v
+F../RTL/RISCV/debug/debug_top.v
+!i122 6
+L0 95 196
+R8
+R9
+r1
+!s85 0
+31
+R10
+R11
+R12
+!i113 0
+R13
+R14
+R2
+n@d@e@b@u@g_@t@o@p
+vFADD_CORE
+R3
+R15
+!i10b 1
+!s100 cV2gk4;]hHSbi=86;i53H2
+I[86[i]5E7V@?VcGD4i=>J1
+S1
+R1
+R5
+R16
+R17
+!i122 6
+L0 3741 172
+R8
+R9
+r1
+!s85 0
+31
+R10
+R11
+R12
+!i113 0
+R13
+R14
+R2
+n@f@a@d@d_@c@o@r@e
+vFADD_SPECIAL_NUMBER
+R3
+R15
+!i10b 1
+!s100 o7W8KI^VQGE8D<C9cb28f3
+IR6h4LfcE5OkMFi;G^84D23
+S1
+R1
+R5
+R16
+R17
+!i122 6
+L0 2461 134
+R8
+R9
+r1
+!s85 0
+31
+R10
+R11
+R12
+!i113 0
+R13
+R14
+R2
+n@f@a@d@d_@s@p@e@c@i@a@l_@n@u@m@b@e@r
+vFCVT_F2I
+R3
+R4
+!i10b 1
+!s100 Aihz<C=zM?a:Y6NAYJHPo0
+I1]Sk^eNMPgOl6Q3?3P6f=0
+S1
+R1
+R5
+R16
+R17
+!i122 6
+L0 4080 190
+R8
+R9
+r1
+!s85 0
+31
+R10
+R11
+R12
+!i113 0
+R13
+R14
+R2
+n@f@c@v@t_@f2@i
+vFCVT_I2F
+R3
+R4
+!i10b 1
+!s100 L[_a326`_?zlA5ioIJfS=3
+IocXf=kCNL_MClQ8]L2`z20
+S1
+R1
+R5
+R16
+R17
+!i122 6
+L0 4297 97
+R8
+R9
+r1
+!s85 0
+31
+R10
+R11
+R12
+!i113 0
+R13
+R14
+R2
+n@f@c@v@t_@i2@f
+vFDIV_SPECIAL_NUMBER
+R3
+R15
+!i10b 1
+!s100 DLJO^bjIA<INUY345bohF2
+InmhWK;Zk2kFT[FaAPT<8>0
+S1
+R1
+R5
+R16
+R17
+!i122 6
+L0 2804 142
+R8
+R9
+r1
+!s85 0
+31
+R10
+R11
+R12
+!i113 0
+R13
+R14
+R2
+n@f@d@i@v_@s@p@e@c@i@a@l_@n@u@m@b@e@r
+vfifo4
+R3
+Z18 !s110 1748955689
+!i10b 1
+!s100 ]EL4A_Ildl9SRaGHj0Df32
+Ia:8]X`ckocV?]zUcLcUAP2
+S1
+R1
+R5
+8../RTL/RISCV/spi/simple_spi/trunk/rtl/verilog/fifo4.v
+F../RTL/RISCV/spi/simple_spi/trunk/rtl/verilog/fifo4.v
+!i122 6
+L0 59 73
+R8
+R9
+r1
+!s85 0
+31
+R10
+R11
+R12
+!i113 0
+R13
+R14
+R2
+vFIND_1ST_ONE_IN_FRAC27
+R3
+R15
+!i10b 1
+!s100 SzodiFbXO76R7ZYRYWV4e1
+IXi2o9kH4Rb=oT0WB>de^b1
+S1
+R1
+R5
+R16
+R17
+!i122 6
+L0 3027 31
+R8
+R9
+r1
+!s85 0
+31
+R10
+R11
+R12
+!i113 0
+R13
+R14
+R2
+n@f@i@n@d_1@s@t_@o@n@e_@i@n_@f@r@a@c27
+vFIND_1ST_ONE_IN_FRAC66
+R3
+R15
+!i10b 1
+!s100 dQd@N8Z@12`?:GzXd;BnE1
+IAE]og_]WPQgiiaRL7_R2g0
+S1
+R1
+R5
+R16
+R17
+!i122 6
+L0 3063 31
+R8
+R9
+r1
+!s85 0
+31
+R10
+R11
+R12
+!i113 0
+R13
+R14
+R2
+n@f@i@n@d_1@s@t_@o@n@e_@i@n_@f@r@a@c66
+vFIND_1ST_ONE_IN_FRAC70
+R3
+R15
+!i10b 1
+!s100 WTghnS0IeC;gdn89ffO9h2
+IZ9R3oS8P>kb5?AZTZ`2Ui3
+S1
+R1
+R5
+R16
+R17
+!i122 6
+L0 3099 31
+R8
+R9
+r1
+!s85 0
+31
+R10
+R11
+R12
+!i113 0
+R13
+R14
+R2
+n@f@i@n@d_1@s@t_@o@n@e_@i@n_@f@r@a@c70
+vFLOAT32_FROM_INNER79
+R3
+R15
+!i10b 1
+!s100 =eN@YVNe>7cJgAMVnN=V51
+IS0;:CVQK_f:T?kHSK7mea3
+S1
+R1
+R5
+R16
+R17
+!i122 6
+L0 3452 282
+R8
+R9
+r1
+!s85 0
+31
+R10
+R11
+R12
+!i113 0
+R13
+R14
+R2
+n@f@l@o@a@t32_@f@r@o@m_@i@n@n@e@r79
+vFMADD_SPECIAL_NUMBER
+R3
+R15
+!i10b 1
+!s100 _V1z;?@XKl0c<YLd>XQG=3
+IhS_Il5haS?QOMQz<W]9;71
+S1
+R1
+R5
+R16
+R17
+!i122 6
+L0 2748 52
+R8
+R9
+r1
+!s85 0
+31
+R10
+R11
+R12
+!i113 0
+R13
+R14
+R2
+n@f@m@a@d@d_@s@p@e@c@i@a@l_@n@u@m@b@e@r
+vFMUL_CORE
+R3
+R4
+!i10b 1
+!s100 7T]@8:O;=zQbSb`[Rm:eY0
+IK8NG]B0KYlG77IhJFKKUL1
+S1
+R1
+R5
+R16
+R17
+!i122 6
+L0 3920 104
+R8
+R9
+r1
+!s85 0
+31
+R10
+R11
+R12
+!i113 0
+R13
+R14
+R2
+n@f@m@u@l_@c@o@r@e
+vFMUL_SPECIAL_NUMBER
+R3
+R15
+!i10b 1
+!s100 WjcB?iDO8TU1DJlHcC81i3
+I5U97P^:6^NC8RJc^KT<ae2
+S1
+R1
+R5
+R16
+R17
+!i122 6
+L0 2600 127
+R8
+R9
+r1
+!s85 0
+31
+R10
+R11
+R12
+!i113 0
+R13
+R14
+R2
+n@f@m@u@l_@s@p@e@c@i@a@l_@n@u@m@b@e@r
+vFPGA_TOP
+R3
+R18
+!i10b 1
+!s100 4L4>koIHg8kfIO]^kH>[V3
+I5;0K<@:m5GVm8LbK:^S2c3
+S1
+R1
+w1748881733
+8../RTL/FPGA_TOP/fpga_top.v
+F../RTL/FPGA_TOP/fpga_top.v
+!i122 6
+L0 260 340
+R8
+R9
+r1
+!s85 0
+31
+R10
+R11
+R12
+!i113 0
+R13
+R14
+R2
+n@f@p@g@a_@t@o@p
+vFRAC27_ROUND_FRAC66
+R3
+R15
+!i10b 1
+!s100 @MzN_VJ3HlzoCmz520=8?3
+IT;@dPc]4S78WY?`bX9ULT2
+S1
+R1
+R5
+R16
+R17
+!i122 6
+L0 3286 43
+R8
+R9
+r1
+!s85 0
+31
+R10
+R11
+R12
+!i113 0
+R13
+R14
+R2
+n@f@r@a@c27_@r@o@u@n@d_@f@r@a@c66
+vFRAC70_ROUND_FRAC132
+R3
+R15
+!i10b 1
+!s100 nI2:P@bfJDHCD8;@[R[n?2
+IUFYh1]4kRR8P<XjTc<QBT0
+S1
+R1
+R5
+R16
+R17
+!i122 6
+L0 3335 43
+R8
+R9
+r1
+!s85 0
+31
+R10
+R11
+R12
+!i113 0
+R13
+R14
+R2
+n@f@r@a@c70_@r@o@u@n@d_@f@r@a@c132
+vFSQRT_SPECIAL_NUMBER
+R3
+R15
+!i10b 1
+!s100 ;=iK2hiWb3_bLXIROjeK@2
+Ion4n_e17[]Ca<aDG@FiK50
+S1
+R1
+R5
+R16
+R17
+!i122 6
+L0 2950 72
+R8
+R9
+r1
+!s85 0
+31
+R10
+R11
+R12
+!i113 0
+R13
+R14
+R2
+n@f@s@q@r@t_@s@p@e@c@i@a@l_@n@u@m@b@e@r
+vI2C
+R3
+R18
+!i10b 1
+!s100 :9RTf84<UMH^J6<]MZHGC1
+IHeZzD0^`nVB81l1LzcjC_3
+S1
+R1
+R5
+8../RTL/RISCV/i2c/i2c.v
+F../RTL/RISCV/i2c/i2c.v
+!i122 6
+L0 55 104
+R8
+R9
+r1
+!s85 0
+31
+R10
+R11
+R12
+!i113 0
+R13
+R14
+R2
+n@i2@c
+vi2c_master_bit_ctrl
+R3
+R18
+!i10b 1
+!s100 9A<FMWzZ=EZ9A[oj5NNS90
+IbPQjRNB74i@;mnL=j=Ff=2
+S1
+R1
+R5
+8../RTL/RISCV/i2c/i2c/trunk/rtl/verilog/i2c_master_bit_ctrl.v
+F../RTL/RISCV/i2c/i2c/trunk/rtl/verilog/i2c_master_bit_ctrl.v
+!i122 6
+L0 143 434
+R8
+R9
+r1
+!s85 0
+31
+R10
+R11
+R12
+!i113 0
+R13
+R14
+R2
+vi2c_master_byte_ctrl
+R3
+R18
+!i10b 1
+!s100 96i`A47QiDlMlRTn:Ogd10
+I__`A;3C=5QCjVA=aVUMA[0
+S1
+R1
+R5
+8../RTL/RISCV/i2c/i2c/trunk/rtl/verilog/i2c_master_byte_ctrl.v
+F../RTL/RISCV/i2c/i2c/trunk/rtl/verilog/i2c_master_byte_ctrl.v
+!i122 6
+L0 75 270
+R8
+R9
+r1
+!s85 0
+31
+R10
+R11
+R12
+!i113 0
+R13
+R14
+R2
+vi2c_master_top
+R3
+R18
+!i10b 1
+!s100 USk]>lm1U4>BhL]Dd60mT0
+I:R3D8ooN]1DdaldiIeL7N1
+S1
+R1
+R5
+8../RTL/RISCV/i2c/i2c/trunk/rtl/verilog/i2c_master_top.v
+F../RTL/RISCV/i2c/i2c/trunk/rtl/verilog/i2c_master_top.v
+!i122 6
+L0 78 223
+R8
+R9
+r1
+!s85 0
+31
+R10
+R11
+R12
+!i113 0
+R13
+R14
+R2
+vi2c_slave_model
+R3
+R18
+!i10b 1
+!s100 99l>P7n=6kOK2z9WL5=`01
+Id_h9zbk[FL>Ro;l3I:KC=2
+S1
+R1
+R5
+8../RTL/RISCV/i2c/i2c_slave_model.v
+F../RTL/RISCV/i2c/i2c_slave_model.v
+!i122 6
+L0 71 299
+R8
+R9
+r1
+!s85 0
+31
+R10
+R11
+R12
+!i113 0
+R13
+R14
+R2
+vINNER79_FROM_FLOAT32
+R3
+R15
+!i10b 1
+!s100 6UYcQo2]=e:6JTQ9B^@190
+ITaWi`]C>:`^l@9MBfB^l[3
+S1
+R1
+R5
+R16
+R17
+!i122 6
+L0 3388 54
+R8
+R9
+r1
+!s85 0
+31
+R10
+R11
+R12
+!i113 0
+R13
+R14
+R2
+n@i@n@n@e@r79_@f@r@o@m_@f@l@o@a@t32
+vINT_GEN
+R3
+R4
+!i10b 1
+!s100 _=G`?1D:HZnz<;:>fDb0W2
+IKl3nU_U=I12OL7W6XVd]c0
+S1
+R1
+R5
+8../RTL/RISCV/int_gen/int_gen.v
+F../RTL/RISCV/int_gen/int_gen.v
+!i122 6
+L0 32 113
+R8
+R9
+r1
+!s85 0
+31
+R10
+R11
+R12
+!i113 0
+R13
+R14
+R2
+n@i@n@t_@g@e@n
+vKEY_PRINTER
+R3
+R15
+!i10b 1
+!s100 kjBn;3BZ;nCaMDbRJG2RR1
+IJI9`mUCYZ`ZL_7=aGeaP72
+S1
+R1
+w1747843434
+8../RTL/MCS4/key_printer.v
+F../RTL/MCS4/key_printer.v
+!i122 6
+L0 86 340
+R8
+R9
+r1
+!s85 0
+31
+R10
+R11
+R12
+!i113 0
+R13
+R14
+R2
+n@k@e@y_@p@r@i@n@t@e@r
+vMCS4_CPU_CHIP
+R3
+R15
+!i10b 1
+!s100 f?T7g_d?@f2OR[fzMnY8_2
+I=jJB><g6AH579oGSeAcHB3
+S1
+R1
+w1748698789
+8../RTL/MCS4/mcs4_cpu_chip.v
+F../RTL/MCS4/mcs4_cpu_chip.v
+!i122 6
+L0 16 41
+R8
+R9
+r1
+!s85 0
+31
+R10
+R11
+R12
+!i113 0
+R13
+R14
+R2
+n@m@c@s4_@c@p@u_@c@h@i@p
+vMCS4_CPU_CORE
+R3
+R15
+!i10b 1
+!s100 cV7nPk=;Fni6kgHSJ2Kzi0
+IC1Pfb6^d5`dRKJgc]G8ZS2
+S1
+R1
+w1748698127
+8../RTL/MCS4/mcs4_cpu_core.v
+F../RTL/MCS4/mcs4_cpu_core.v
+!i122 6
+L0 30 889
+R8
+R9
+r1
+!s85 0
+31
+R10
+R11
+R12
+!i113 0
+R13
+R14
+R2
+n@m@c@s4_@c@p@u_@c@o@r@e
+vMCS4_RAM
+R3
+R15
+!i10b 1
+!s100 _9Ri<QB9Pm=L8k4FdXhn@0
+IS[C4DZZ3LH8nQPb?o0O>02
+S1
+R1
+w1748151217
+8../RTL/MCS4/mcs4_ram.v
+F../RTL/MCS4/mcs4_ram.v
+!i122 6
+L0 41 186
+R8
+R9
+r1
+!s85 0
+31
+R10
+R11
+R12
+!i113 0
+R13
+R14
+R2
+n@m@c@s4_@r@a@m
+vMCS4_ROM
+R3
+R15
+!i10b 1
+!s100 ZH3ikKHhQVc;>B_WlA<DI2
+I2k8NFK^kZE0=C2VBzWgjB0
+S1
+R1
+w1748532030
+8../RTL/MCS4/mcs4_rom_fpga.v
+F../RTL/MCS4/mcs4_rom_fpga.v
+!i122 6
+L0 45 215
+R8
+R9
+r1
+!s85 0
+31
+R10
+R11
+R12
+!i113 0
+R13
+R14
+R2
+n@m@c@s4_@r@o@m
+vMCS4_SHIFTER
+R3
+R15
+!i10b 1
+!s100 2`8d`mUjDb^PL<a@k<?T;1
+ImdVeogTT3nn6CU:c`om@X0
+S1
+R1
+w1748151232
+8../RTL/MCS4/mcs4_shifter.v
+F../RTL/MCS4/mcs4_shifter.v
+!i122 6
+L0 16 37
+R8
+R9
+r1
+!s85 0
+31
+R10
+R11
+R12
+!i113 0
+R13
+R14
+R2
+n@m@c@s4_@s@h@i@f@t@e@r
+vMCS4_SYS
+R3
+R15
+!i10b 1
+!s100 @ZObzYbNfT59D2IPMTSX22
+I:nCn9DGoHORI>h:z^bXa]2
+S1
+R1
+w1748881644
+8../RTL/MCS4/mcs4_sys.v
+F../RTL/MCS4/mcs4_sys.v
+!i122 6
+L0 56 139
+R8
+R9
+r1
+!s85 0
+31
+R10
+R11
+R12
+!i113 0
+R13
+R14
+R2
+n@m@c@s4_@s@y@s
+vmmRISC
+R3
+R15
+!i10b 1
+!s100 0fDgQRjd^g4T?WF::Pe[B3
+I`0aFVR^[QJ<5AS?dZIClR1
+S1
+R1
+R5
+8../RTL/RISCV/mmRISC/mmRISC.v
+F../RTL/RISCV/mmRISC/mmRISC.v
+!i122 6
+L0 20 518
+R8
+R9
+r1
+!s85 0
+31
+R10
+R11
+R12
+!i113 0
+R13
+R14
+R2
+nmm@r@i@s@c
+vPLL
+R3
+R18
+!i10b 1
+!s100 WgIWg_ooH=0TKNV>n?;hZ3
+IMlQm34A`hBM1J^bUj5PFl3
+S1
+R1
+w1748273600
+8../FPGA/PLL.v
+F../FPGA/PLL.v
+!i122 6
+L0 40 140
+R8
+R9
+r1
+!s85 0
+31
+R10
+R11
+R12
+!i113 0
+R13
+R14
+R2
+n@p@l@l
+vPORT
+R3
+R4
+!i10b 1
+!s100 AE`j[TXXU2G1MEW<Dkemm2
+IEjN0ZS`OeEOkjm2PiOZfY2
+S1
+R1
+w1748446554
+8../RTL/RISCV/port/port.v
+F../RTL/RISCV/port/port.v
+!i122 6
+L0 40 185
+R8
+R9
+r1
+!s85 0
+31
+R10
+R11
+R12
+!i113 0
+R13
+R14
+R2
+n@p@o@r@t
+vRAM
+R3
+R4
+!i10b 1
+!s100 ie[^[h3nO=MDPUfjZ:E2I1
+Io<gVM`Qh`QIm^30RE^3mh3
+S1
+R1
+w1748356254
+8../RTL/RISCV/ram/ram.v
+F../RTL/RISCV/ram/ram.v
+!i122 6
+L0 16 263
+R8
+R9
+r1
+!s85 0
+31
+R10
+R11
+R12
+!i113 0
+R13
+R14
+R2
+n@r@a@m
+vRAM128KB_DP
+R3
+R4
+!i10b 1
+!s100 JNZGHUcdTA`87_aJf<eLV3
+IaYagXaebgb`U::Bm8en:D2
+S1
+R1
+w1748703416
+8../FPGA/RAM128KB_DP.v
+F../FPGA/RAM128KB_DP.v
+!i122 6
+L0 40 104
+R8
+R9
+r1
+!s85 0
+31
+R10
+R11
+R12
+!i113 0
+R13
+R14
+R2
+n@r@a@m128@k@b_@d@p
+vRAM_FPGA
+R3
+R4
+!i10b 1
+!s100 9kV>K[[7GV2g;aE<EYAB`1
+II==]oWM@PeocWE=IFJ=QX0
+S1
+R1
+R5
+8../RTL/RISCV/ram/ram_fpga.v
+F../RTL/RISCV/ram/ram_fpga.v
+!i122 6
+L0 16 227
+R8
+R9
+r1
+!s85 0
+31
+R10
+R11
+R12
+!i113 0
+R13
+R14
+R2
+n@r@a@m_@f@p@g@a
+vRISCV_TOP
+R3
+R18
+!i10b 1
+!s100 M_dl1fZ4YSi15S@EOGl2R0
+I7AEK@hAXgFX0N<[RK^4So0
+S1
+R1
+w1748356935
+8../RTL/RISCV/riscv_top/riscv_top.v
+F../RTL/RISCV/riscv_top/riscv_top.v
+!i122 6
+L0 23 864
+R8
+R9
+r1
+!s85 0
+31
+R10
+R11
+R12
+!i113 0
+R13
+R14
+R2
+n@r@i@s@c@v_@t@o@p
+vROM4KB_SP
+R3
+R15
+!i10b 1
+!s100 ];9nP1V472KS`cVCkXf3V2
+I6W8WHCg_K:;R6EEh?<<191
+S1
+R1
+w1748703445
+8../FPGA/ROM4KB_SP.v
+F../FPGA/ROM4KB_SP.v
+!i122 6
+L0 40 64
+R8
+R9
+r1
+!s85 0
+31
+R10
+R11
+R12
+!i113 0
+R13
+R14
+R2
+n@r@o@m4@k@b_@s@p
+vROUND_JUDGMENT
+R3
+R15
+!i10b 1
+!s100 cNCK4<ZZ7]fY`5Rh:<gnM3
+Im;iPBj7dl7eSAa:n5eTJX3
+S1
+R1
+R5
+R16
+R17
+!i122 6
+L0 3215 65
+R8
+R9
+r1
+!s85 0
+31
+R10
+R11
+R12
+!i113 0
+R13
+R14
+R2
+n@r@o@u@n@d_@j@u@d@g@m@e@n@t
+vsasc_brg
+R3
+R4
+!i10b 1
+!s100 XOe3@i2DICFUZ<F2<Ok?k1
+Ij?X>QiPLFAi9U>;m=N9[;2
+S1
+R1
+R5
+8../RTL/RISCV/uart/sasc/trunk/rtl/verilog/sasc_brg.v
+F../RTL/RISCV/uart/sasc/trunk/rtl/verilog/sasc_brg.v
+!i122 6
+L0 84 72
+R8
+R9
+r1
+!s85 0
+31
+R10
+R11
+R12
+!i113 0
+R13
+R14
+R2
+vsasc_fifo4
+R3
+R4
+!i10b 1
+!s100 Qim603O3FbmIXfTacej;Q2
+INZKfEE<RcnGCUXM`>U>g_2
+S1
+R1
+R5
+8../RTL/RISCV/uart/sasc/trunk/rtl/verilog/sasc_fifo4.v
+F../RTL/RISCV/uart/sasc/trunk/rtl/verilog/sasc_fifo4.v
+!i122 6
+L0 60 71
+R8
+R9
+r1
+!s85 0
+31
+R10
+R11
+R12
+!i113 0
+R13
+R14
+R2
+vsasc_top
+R3
+R4
+!i10b 1
+!s100 NM`KbX6GQ0niQMXFjH7h;0
+I_05OgPOQ>bi4`=>bGzV@O2
+S1
+R1
+R5
+8../RTL/RISCV/uart/sasc/trunk/rtl/verilog/sasc_top.v
+F../RTL/RISCV/uart/sasc/trunk/rtl/verilog/sasc_top.v
+!i122 6
+L0 73 232
+R8
+R9
+r1
+!s85 0
+31
+R10
+R11
+R12
+!i113 0
+R13
+R14
+R2
+vsdr
+R3
+R4
+!i10b 1
+!s100 Z`=5Z7O[>^T]O@RgfbmQT2
+Ijf:PB=_?48:U3j0nPdO4;0
+S1
+R1
+R5
+8../RTL/RISCV/ahb_sdram/model/sdr.v
+F../RTL/RISCV/ahb_sdram/model/sdr.v
+F../RTL/RISCV/ahb_sdram/model/sdr_parameters.vh
+!i122 6
+L0 48 1230
+R8
+R9
+r1
+!s85 0
+31
+R10
+R11
+R12
+!i113 0
+R13
+R14
+R2
+vSHIFT_RIGHT_FRAC27
+R3
+R15
+!i10b 1
+!s100 ?7B=YoACc=2adz[`<2l7S1
+IYJiij<S1lA0?190mSo<a?0
+S1
+R1
+R5
+R16
+R17
+!i122 6
+L0 3135 22
+R8
+R9
+r1
+!s85 0
+31
+R10
+R11
+R12
+!i113 0
+R13
+R14
+R2
+n@s@h@i@f@t_@r@i@g@h@t_@f@r@a@c27
+vSHIFT_RIGHT_FRAC66
+R3
+R15
+!i10b 1
+!s100 llYbA3`g<cQe<8;;63hOH3
+INHm6D5aG]>X]NQJhQz:U=1
+S1
+R1
+R5
+R16
+R17
+!i122 6
+L0 3162 22
+R8
+R9
+r1
+!s85 0
+31
+R10
+R11
+R12
+!i113 0
+R13
+R14
+R2
+n@s@h@i@f@t_@r@i@g@h@t_@f@r@a@c66
+vSHIFT_RIGHT_FRAC70
+R3
+R15
+!i10b 1
+!s100 C2gBiFlkcRdXhiNOiNajj0
+I]AoUB8zE`f?ND>Y[U=g4X0
+S1
+R1
+R5
+R16
+R17
+!i122 6
+L0 3189 22
+R8
+R9
+r1
+!s85 0
+31
+R10
+R11
+R12
+!i113 0
+R13
+R14
+R2
+n@s@h@i@f@t_@r@i@g@h@t_@f@r@a@c70
+vsimple_spi_top
+R3
+R18
+!i10b 1
+!s100 en67N4^2Q8o52H0Cg[FnG3
+Io1Un?K72@B=:Qeji02>LA1
+S1
+R1
+R5
+8../RTL/RISCV/spi/simple_spi/trunk/rtl/verilog/simple_spi_top.v
+F../RTL/RISCV/spi/simple_spi/trunk/rtl/verilog/simple_spi_top.v
+!i122 6
+L0 73 252
+R8
+R9
+r1
+!s85 0
+31
+R10
+R11
+R12
+!i113 0
+R13
+R14
+R2
+vSPI
+R3
+R18
+!i10b 1
+!s100 W;S>eGc_o76LW8T7f8T`J2
+IjPK9X>4CXVRSC<Y^zYAKj1
+S1
+R1
+R5
+8../RTL/RISCV/spi/spi.v
+F../RTL/RISCV/spi/spi.v
+!i122 6
+L0 60 148
+R8
+R9
+r1
+!s85 0
+31
+R10
+R11
+R12
+!i113 0
+R13
+R14
+R2
+n@s@p@i
+vtb_TOP
+R3
+R18
+!i10b 1
+!s100 [g@X5Zf;:ZmPjEMKMIX=L1
+IioQ>U`WVoC2782k3=2A?R2
+S1
+R1
+w1748955680
+8../SIM_questa/tb_TOP.v
+F../SIM_questa/tb_TOP.v
+!i122 6
+L0 30 255
+R8
+R9
+r1
+!s85 0
+31
+R10
+R11
+R12
+!i113 0
+R13
+R14
+R2
+ntb_@t@o@p
+vtt_um_munetomomaruyama_CPU
+R3
+R15
+!i10b 1
+!s100 1@gHi`hM26^?D:]^4@LOa0
+IibHo?9>HzRL[?L9cVb1VU2
+S1
+R1
+w1748699240
+8../../src/tt_um_munetomomaruyama_CPU.v
+F../../src/tt_um_munetomomaruyama_CPU.v
+!i122 6
+L0 19 79
+R8
+R9
+r1
+!s85 0
+31
+R10
+R11
+R12
+!i113 0
+R13
+R14
+R2
+ntt_um_munetomomaruyama_@c@p@u
+vUART
+R3
+R4
+!i10b 1
+!s100 ;DfS9VR=VC<lMC7bZbZ[l0
+IMCkMIzi1GENdT@<WoQj6g2
+S1
+R1
+R5
+8../RTL/RISCV/uart/uart.v
+F../RTL/RISCV/uart/uart.v
+!i122 6
+L0 53 216
+R8
+R9
+r1
+!s85 0
+31
+R10
+R11
+R12
+!i113 0
+R13
+R14
+R2
+n@u@a@r@t

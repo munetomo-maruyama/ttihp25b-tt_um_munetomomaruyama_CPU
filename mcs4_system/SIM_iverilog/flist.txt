@@ -1,0 +1,15 @@
++define+SIMULATION
+
++incdir+${DIR_SIM}
++incdir+${DIR_RTL_SYS}
++incdir+${DIR_RTL_SRC}
+
+${DIR_RTL_SRC}/tt_um_munetomomaruyama_CPU.v
+${DIR_RTL_SYS}/MCS4/mcs4_cpu_chip.v
+${DIR_RTL_SYS}/MCS4/mcs4_cpu_core.v
+${DIR_RTL_SYS}/MCS4/mcs4_sys.v
+${DIR_RTL_SYS}/MCS4/mcs4_rom.v
+${DIR_RTL_SYS}/MCS4/mcs4_ram.v
+${DIR_RTL_SYS}/MCS4/key_printer.v
+${DIR_RTL_SYS}/MCS4/mcs4_shifter.v
+${DIR_SIM}/mcs4_tb.v

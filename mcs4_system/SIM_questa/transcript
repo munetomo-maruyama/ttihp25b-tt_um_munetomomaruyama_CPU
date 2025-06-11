@@ -1,0 +1,1053 @@
+# //  Questa Intel Starter FPGA Edition-64
+# //  Version 2021.2 win64 Apr 14 2021
+# //
+# //  Copyright 1991-2021 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+
+ls
+# RAM128KB_DP.mif                     wlft6rmixb  
+# RAM128KB_DP.ver                     wlft72xsdx  
+# ROM4K_SP_141PF.mif                  wlft860efy  
+# ROM4K_SP_141PF.mif:Zone.Identifier  wlftbcvcf3  
+# ROM4K_SP_141PF.ver                  wlftbvjdwe  
+# modelsim.ini                        wlftdtzxk7  
+# sim_TOP.do                          wlftgqcb6a  
+# tb_TOP.v                            wlftii7fte  
+# transcript                          wlftknvrwj  
+# vish_stacktrace.vstf                wlftnd9qsn  
+# vsim.wlf                            wlftngvcd0  
+# wlft05rnq3                          wlftsrtqeq  
+# wlft0mxm83                          wlftyv2rc8  
+# wlft0z71xr                          work        
+# wlft3jjehc                                      
+ls
+# RAM128KB_DP.mif                     wlft6rmixb  
+# RAM128KB_DP.ver                     wlft72xsdx  
+# ROM4K_SP_141PF.mif                  wlft860efy  
+# ROM4K_SP_141PF.mif:Zone.Identifier  wlftbcvcf3  
+# ROM4K_SP_141PF.ver                  wlftbvjdwe  
+# modelsim.ini                        wlftdtzxk7  
+# sim_TOP.do                          wlftgqcb6a  
+# tb_TOP.v                            wlftii7fte  
+# transcript                          wlftknvrwj  
+# vish_stacktrace.vstf                wlftnd9qsn  
+# vsim.wlf                            wlftngvcd0  
+# wlft05rnq3                          wlftsrtqeq  
+# wlft0mxm83                          wlftyv2rc8  
+# wlft0z71xr                          work        
+# wlft3jjehc                                      
+do sim_TOP.do
+# ../../src
+# ../RTL/MCS4
+# ../RTL/FPGA_TOP
+# ../RTL/RISCV
+# ../FPGA
+# ../SIM_questa
+# ** Warning: (vlib-34) Library already exists at "work".
+# Errors: 0, Warnings: 1
+# Questa Intel Starter FPGA Edition-64 vmap 2021.2 Lib Mapping Utility 2021.04 Apr 14 2021
+# vmap work work 
+# Modifying modelsim.ini
+# Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 21:05:56 on Jun 03,2025
+# vlog -reportprogress 300 -work work -sv "+incdir+../RTL/RISCV/common" "+incdir+../RTL/RISCV/ahb_sdram/model" "+incdir+../RTL/RISCV/i2c/i2c/trunk/rtl/verilog" -timescale=1ns/100ps "+define+SIMULATION" "+define+FPGA" "+define+den512Mb" "+define+sg75" "+define+x16" ../../src/tt_um_munetomomaruyama_CPU.v ../RTL/MCS4/mcs4_cpu_chip.v ../RTL/MCS4/mcs4_cpu_core.v ../RTL/MCS4/mcs4_sys.v ../RTL/MCS4/mcs4_rom_fpga.v ../FPGA/ROM4KB_SP.v ../RTL/MCS4/mcs4_ram.v ../RTL/MCS4/key_printer.v ../RTL/MCS4/mcs4_shifter.v ../RTL/RISCV/mmRISC/mmRISC.v ../RTL/RISCV/mmRISC/bus_m_ahb.v ../RTL/RISCV/mmRISC/csr_mtime.v ../RTL/RISCV/cpu/cpu_top.v ../RTL/RISCV/cpu/cpu_fetch.v ../RTL/RISCV/cpu/cpu_datapath.v ../RTL/RISCV/cpu/cpu_pipeline.v ../RTL/RISCV/cpu/cpu_fpu32.v ../RTL/RISCV/cpu/cpu_csr.v ../RTL/RISCV/cpu/cpu_csr_int.v ../RTL/RISCV/cpu/cpu_csr_dbg.v ../RTL/RISCV/cpu/cpu_debug.v ../RTL/RISCV/debug/debug_top.v ../RTL/RISCV/debug/debug_dtm_jtag.v ../RTL/RISCV/debug/debug_cdc.v ../RTL/RISCV/debug/debug_dm.v ../RTL/RISCV/int_gen/int_gen.v ../RTL/RISCV/ahb_matrix/ahb_top.v ../RTL/RISCV/ahb_matrix/ahb_master_port.v ../RTL/RISCV/ahb_matrix/ahb_slave_port.v ../RTL/RISCV/ahb_matrix/ahb_interconnect.v ../RTL/RISCV/ahb_matrix/ahb_arb.v ../RTL/RISCV/ahb_sdram/logic/ahb_lite_sdram.v ../RTL/RISCV/ahb_sdram/model/sdr.v ../RTL/RISCV/ram/ram.v ../RTL/RISCV/ram/ram_fpga.v ../FPGA/RAM128KB_DP.v ../RTL/RISCV/port/port.v ../RTL/RISCV/uart/uart.v ../RTL/RISCV/uart/sasc/trunk/rtl/verilog/sasc_top.v ../RTL/RISCV/uart/sasc/trunk/rtl/verilog/sasc_fifo4.v ../RTL/RISCV/uart/sasc/trunk/rtl/verilog/sasc_brg.v ../RTL/RISCV/i2c/i2c.v ../RTL/RISCV/i2c/i2c/trunk/rtl/verilog/i2c_master_top.v ../RTL/RISCV/i2c/i2c/trunk/rtl/verilog/i2c_master_bit_ctrl.v ../RTL/RISCV/i2c/i2c/trunk/rtl/verilog/i2c_master_byte_ctrl.v ../RTL/RISCV/i2c/i2c_slave_model.v ../RTL/RISCV/spi/spi.v ../RTL/RISCV/spi/simple_spi/trunk/rtl/verilog/simple_spi_top.v ../RTL/RISCV/spi/simple_spi/trunk/rtl/verilog/fifo4.v ../RTL/RISCV/riscv_top/riscv_top.v ../RTL/FPGA_TOP/fpga_top.v ../FPGA/PLL.v ../SIM_questa/tb_TOP.v 
+# -- Compiling module tt_um_munetomomaruyama_CPU
+# -- Compiling module MCS4_CPU_CHIP
+# -- Compiling module MCS4_CPU_CORE
+# -- Compiling module MCS4_SYS
+# -- Compiling module MCS4_ROM
+# -- Compiling module ROM4KB_SP
+# -- Compiling module MCS4_RAM
+# -- Compiling module KEY_PRINTER
+# -- Compiling module MCS4_SHIFTER
+# -- Compiling module mmRISC
+# -- Compiling module BUS_M_AHB
+# -- Compiling module CSR_MTIME
+# -- Compiling module CPU_TOP
+# -- Compiling module CPU_FETCH
+# -- Compiling module CPU_DATAPATH
+# -- Compiling module CPU_PIPELINE
+# -- Compiling module CPU_FPU32
+# -- Compiling module CHECK_FTYPE
+# -- Compiling module FADD_SPECIAL_NUMBER
+# -- Compiling module FMUL_SPECIAL_NUMBER
+# -- Compiling module FMADD_SPECIAL_NUMBER
+# -- Compiling module FDIV_SPECIAL_NUMBER
+# -- Compiling module FSQRT_SPECIAL_NUMBER
+# -- Compiling module FIND_1ST_ONE_IN_FRAC27
+# -- Compiling module FIND_1ST_ONE_IN_FRAC66
+# -- Compiling module FIND_1ST_ONE_IN_FRAC70
+# -- Compiling module SHIFT_RIGHT_FRAC27
+# -- Compiling module SHIFT_RIGHT_FRAC66
+# -- Compiling module SHIFT_RIGHT_FRAC70
+# -- Compiling module ROUND_JUDGMENT
+# -- Compiling module FRAC27_ROUND_FRAC66
+# -- Compiling module FRAC70_ROUND_FRAC132
+# -- Compiling module INNER79_FROM_FLOAT32
+# -- Compiling module FLOAT32_FROM_INNER79
+# -- Compiling module FADD_CORE
+# -- Compiling module FMUL_CORE
+# -- Compiling module FCVT_F2I
+# -- Compiling module FCVT_I2F
+# -- Compiling module CPU_CSR
+# -- Compiling module CPU_CSR_INT
+# -- Compiling module CPU_CSR_DBG
+# -- Compiling module CPU_DEBUG
+# -- Compiling module DEBUG_TOP
+# -- Compiling module DEBUG_DTM_JTAG
+# -- Compiling module DEBUG_CDC
+# -- Compiling module DEBUG_DM
+# -- Compiling module INT_GEN
+# -- Compiling module AHB_MATRIX
+# -- Compiling module AHB_MASTER_PORT
+# -- Compiling module AHB_SLAVE_PORT
+# -- Compiling module AHB_INTERCONNECT
+# -- Compiling module AHB_ARB
+# -- Compiling module AHB_ARB_RB
+# -- Compiling module ahb_lite_sdram
+# -- Compiling module sdr
+# -- Compiling module RAM
+# -- Compiling module RAM_FPGA
+# -- Compiling module RAM128KB_DP
+# -- Compiling module PORT
+# -- Compiling module UART
+# -- Compiling module sasc_top
+# -- Compiling module sasc_fifo4
+# -- Compiling module sasc_brg
+# -- Compiling module I2C
+# -- Compiling module i2c_master_top
+# -- Compiling module i2c_master_bit_ctrl
+# -- Compiling module i2c_master_byte_ctrl
+# -- Compiling module i2c_slave_model
+# -- Compiling module SPI
+# -- Compiling module simple_spi_top
+# -- Compiling module fifo4
+# -- Compiling module RISCV_TOP
+# -- Compiling module FPGA_TOP
+# -- Compiling module PLL
+# -- Compiling module tb_TOP
+# 
+# Top level modules:
+# 	tt_um_munetomomaruyama_CPU
+# 	tb_TOP
+# End time: 21:05:59 on Jun 03,2025, Elapsed time: 0:00:03
+# Errors: 0, Warnings: 0
+# vsim -c -voptargs=""+acc"" -L altera_mf_ver work.tb_TOP 
+# Start time: 21:05:59 on Jun 03,2025
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading sv_std.std
+# Loading work.tb_TOP(fast)
+# Loading work.FPGA_TOP(fast)
+# Loading work.MCS4_CPU_CHIP(fast)
+# Loading work.MCS4_CPU_CORE(fast)
+# Loading work.MCS4_SYS(fast)
+# Loading work.MCS4_ROM(fast)
+# Loading work.ROM4KB_SP(fast)
+# Loading altera_mf_ver.altsyncram(fast)
+# Loading altera_mf_ver.altsyncram_body(fast)
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES(fast)
+# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION(fast)
+# Loading work.MCS4_RAM(fast)
+# Loading work.KEY_PRINTER(fast)
+# Loading work.MCS4_SHIFTER(fast)
+# Loading work.PLL(fast)
+# Loading altera_mf_ver.altpll(fast)
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES(fast__1)
+# Loading altera_mf_ver.MF_cycloneiii_pll(fast)
+# Loading altera_mf_ver.cda_m_cntr(fast)
+# Loading altera_mf_ver.cda_n_cntr(fast)
+# Loading altera_mf_ver.cda_scale_cntr(fast)
+# Loading altera_mf_ver.pll_iobuf(fast)
+# Loading work.RISCV_TOP(fast)
+# Loading work.mmRISC(fast)
+# Loading work.DEBUG_TOP(fast)
+# Loading work.DEBUG_DTM_JTAG(fast)
+# Loading work.DEBUG_CDC(fast)
+# Loading work.DEBUG_DM(fast)
+# Loading work.CPU_TOP(fast)
+# Loading work.CPU_FETCH(fast)
+# Loading work.CPU_DATAPATH(fast)
+# Loading work.CPU_PIPELINE(fast)
+# Loading work.CPU_CSR(fast)
+# Loading work.CPU_CSR_INT(fast)
+# Loading work.CPU_CSR_DBG(fast)
+# Loading work.CPU_DEBUG(fast)
+# Loading work.CPU_FPU32(fast)
+# Loading work.FMUL_SPECIAL_NUMBER(fast)
+# Loading work.CHECK_FTYPE(fast)
+# Loading work.FADD_SPECIAL_NUMBER(fast)
+# Loading work.FMADD_SPECIAL_NUMBER(fast)
+# Loading work.FDIV_SPECIAL_NUMBER(fast)
+# Loading work.FSQRT_SPECIAL_NUMBER(fast)
+# Loading work.INNER79_FROM_FLOAT32(fast)
+# Loading work.FIND_1ST_ONE_IN_FRAC66(fast)
+# Loading work.FMUL_CORE(fast)
+# Loading work.FRAC70_ROUND_FRAC132(fast)
+# Loading work.ROUND_JUDGMENT(fast)
+# Loading work.FIND_1ST_ONE_IN_FRAC70(fast)
+# Loading work.SHIFT_RIGHT_FRAC70(fast)
+# Loading work.FADD_CORE(fast)
+# Loading work.SHIFT_RIGHT_FRAC66(fast)
+# Loading work.FLOAT32_FROM_INNER79(fast)
+# Loading work.FRAC27_ROUND_FRAC66(fast)
+# Loading work.FIND_1ST_ONE_IN_FRAC27(fast)
+# Loading work.SHIFT_RIGHT_FRAC27(fast)
+# Loading work.FCVT_F2I(fast)
+# Loading work.FCVT_I2F(fast)
+# Loading work.BUS_M_AHB(fast)
+# Loading work.AHB_MATRIX(fast)
+# Loading work.AHB_MASTER_PORT(fast)
+# Loading work.AHB_INTERCONNECT(fast)
+# Loading work.AHB_ARB(fast)
+# Loading work.AHB_ARB_RB(fast)
+# Loading work.AHB_SLAVE_PORT(fast)
+# Loading work.CSR_MTIME(fast)
+# Loading work.ahb_lite_sdram(fast)
+# Loading work.RAM(fast)
+# Loading work.RAM_FPGA(fast)
+# Loading work.RAM128KB_DP(fast)
+# Loading altera_mf_ver.altsyncram(fast__1)
+# Loading altera_mf_ver.altsyncram_body(fast__1)
+# Loading work.PORT(fast)
+# Loading work.UART(fast)
+# Loading work.sasc_top(fast)
+# Loading work.sasc_fifo4(fast)
+# Loading work.sasc_brg(fast)
+# Loading work.INT_GEN(fast)
+# Loading work.I2C(fast)
+# Loading work.i2c_master_top(fast)
+# Loading work.i2c_master_byte_ctrl(fast)
+# Loading work.i2c_master_bit_ctrl(fast)
+# Loading work.SPI(fast)
+# Loading work.simple_spi_top(fast)
+# Loading work.fifo4(fast)
+# Loading work.i2c_slave_model(fast)
+# Loading work.sdr(fast)
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: taka  Hostname: PC-8001  ProcessID: 15560
+#           Attempting to use alternate WLF file "./wlft09ghim".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlft09ghim
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_TOP.U_FPGA_TOP.U_RISCV_TOP.U_RAMI.U_RAM128KB_DP.altsyncram_component.m_default.altsyncram_inst
+#  Note : MAX 10 PLL locked to incoming clock
+# Time: 90.0 ns  Instance: tb_TOP.U_FPGA_TOP.U_PLL.altpll_component.cycloneiii_pll.pll3
+# ***** DETECT FINAL STIMULUS *****
+# ** Note: $stop    : ../SIM_questa/tb_TOP.v(99)
+#    Time: 2 ms  Iteration: 1  Instance: /tb_TOP
+# Break in Module tb_TOP at ../SIM_questa/tb_TOP.v line 99
+do sim_TOP.do
+# ../../src
+# ../RTL/MCS4
+# ../RTL/FPGA_TOP
+# ../RTL/RISCV
+# ../FPGA
+# ../SIM_questa
+# ** Warning: (vlib-34) Library already exists at "work".
+# Errors: 0, Warnings: 1
+# Questa Intel Starter FPGA Edition-64 vmap 2021.2 Lib Mapping Utility 2021.04 Apr 14 2021
+# vmap work work 
+# Modifying modelsim.ini
+# Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 21:20:58 on Jun 03,2025
+# vlog -reportprogress 300 -work work -sv "+incdir+../RTL/RISCV/common" "+incdir+../RTL/RISCV/ahb_sdram/model" "+incdir+../RTL/RISCV/i2c/i2c/trunk/rtl/verilog" -timescale=1ns/100ps "+define+SIMULATION" "+define+FPGA" "+define+den512Mb" "+define+sg75" "+define+x16" ../../src/tt_um_munetomomaruyama_CPU.v ../RTL/MCS4/mcs4_cpu_chip.v ../RTL/MCS4/mcs4_cpu_core.v ../RTL/MCS4/mcs4_sys.v ../RTL/MCS4/mcs4_rom_fpga.v ../FPGA/ROM4KB_SP.v ../RTL/MCS4/mcs4_ram.v ../RTL/MCS4/key_printer.v ../RTL/MCS4/mcs4_shifter.v ../RTL/RISCV/mmRISC/mmRISC.v ../RTL/RISCV/mmRISC/bus_m_ahb.v ../RTL/RISCV/mmRISC/csr_mtime.v ../RTL/RISCV/cpu/cpu_top.v ../RTL/RISCV/cpu/cpu_fetch.v ../RTL/RISCV/cpu/cpu_datapath.v ../RTL/RISCV/cpu/cpu_pipeline.v ../RTL/RISCV/cpu/cpu_fpu32.v ../RTL/RISCV/cpu/cpu_csr.v ../RTL/RISCV/cpu/cpu_csr_int.v ../RTL/RISCV/cpu/cpu_csr_dbg.v ../RTL/RISCV/cpu/cpu_debug.v ../RTL/RISCV/debug/debug_top.v ../RTL/RISCV/debug/debug_dtm_jtag.v ../RTL/RISCV/debug/debug_cdc.v ../RTL/RISCV/debug/debug_dm.v ../RTL/RISCV/int_gen/int_gen.v ../RTL/RISCV/ahb_matrix/ahb_top.v ../RTL/RISCV/ahb_matrix/ahb_master_port.v ../RTL/RISCV/ahb_matrix/ahb_slave_port.v ../RTL/RISCV/ahb_matrix/ahb_interconnect.v ../RTL/RISCV/ahb_matrix/ahb_arb.v ../RTL/RISCV/ahb_sdram/logic/ahb_lite_sdram.v ../RTL/RISCV/ahb_sdram/model/sdr.v ../RTL/RISCV/ram/ram.v ../RTL/RISCV/ram/ram_fpga.v ../FPGA/RAM128KB_DP.v ../RTL/RISCV/port/port.v ../RTL/RISCV/uart/uart.v ../RTL/RISCV/uart/sasc/trunk/rtl/verilog/sasc_top.v ../RTL/RISCV/uart/sasc/trunk/rtl/verilog/sasc_fifo4.v ../RTL/RISCV/uart/sasc/trunk/rtl/verilog/sasc_brg.v ../RTL/RISCV/i2c/i2c.v ../RTL/RISCV/i2c/i2c/trunk/rtl/verilog/i2c_master_top.v ../RTL/RISCV/i2c/i2c/trunk/rtl/verilog/i2c_master_bit_ctrl.v ../RTL/RISCV/i2c/i2c/trunk/rtl/verilog/i2c_master_byte_ctrl.v ../RTL/RISCV/i2c/i2c_slave_model.v ../RTL/RISCV/spi/spi.v ../RTL/RISCV/spi/simple_spi/trunk/rtl/verilog/simple_spi_top.v ../RTL/RISCV/spi/simple_spi/trunk/rtl/verilog/fifo4.v ../RTL/RISCV/riscv_top/riscv_top.v ../RTL/FPGA_TOP/fpga_top.v ../FPGA/PLL.v ../SIM_questa/tb_TOP.v 
+# -- Compiling module tt_um_munetomomaruyama_CPU
+# -- Compiling module MCS4_CPU_CHIP
+# -- Compiling module MCS4_CPU_CORE
+# -- Compiling module MCS4_SYS
+# -- Compiling module MCS4_ROM
+# -- Compiling module ROM4KB_SP
+# -- Compiling module MCS4_RAM
+# -- Compiling module KEY_PRINTER
+# -- Compiling module MCS4_SHIFTER
+# -- Compiling module mmRISC
+# -- Compiling module BUS_M_AHB
+# -- Compiling module CSR_MTIME
+# -- Compiling module CPU_TOP
+# -- Compiling module CPU_FETCH
+# -- Compiling module CPU_DATAPATH
+# -- Compiling module CPU_PIPELINE
+# -- Compiling module CPU_FPU32
+# -- Compiling module CHECK_FTYPE
+# -- Compiling module FADD_SPECIAL_NUMBER
+# -- Compiling module FMUL_SPECIAL_NUMBER
+# -- Compiling module FMADD_SPECIAL_NUMBER
+# -- Compiling module FDIV_SPECIAL_NUMBER
+# -- Compiling module FSQRT_SPECIAL_NUMBER
+# -- Compiling module FIND_1ST_ONE_IN_FRAC27
+# -- Compiling module FIND_1ST_ONE_IN_FRAC66
+# -- Compiling module FIND_1ST_ONE_IN_FRAC70
+# -- Compiling module SHIFT_RIGHT_FRAC27
+# -- Compiling module SHIFT_RIGHT_FRAC66
+# -- Compiling module SHIFT_RIGHT_FRAC70
+# -- Compiling module ROUND_JUDGMENT
+# -- Compiling module FRAC27_ROUND_FRAC66
+# -- Compiling module FRAC70_ROUND_FRAC132
+# -- Compiling module INNER79_FROM_FLOAT32
+# -- Compiling module FLOAT32_FROM_INNER79
+# -- Compiling module FADD_CORE
+# -- Compiling module FMUL_CORE
+# -- Compiling module FCVT_F2I
+# -- Compiling module FCVT_I2F
+# -- Compiling module CPU_CSR
+# -- Compiling module CPU_CSR_INT
+# -- Compiling module CPU_CSR_DBG
+# -- Compiling module CPU_DEBUG
+# -- Compiling module DEBUG_TOP
+# -- Compiling module DEBUG_DTM_JTAG
+# -- Compiling module DEBUG_CDC
+# -- Compiling module DEBUG_DM
+# -- Compiling module INT_GEN
+# -- Compiling module AHB_MATRIX
+# -- Compiling module AHB_MASTER_PORT
+# -- Compiling module AHB_SLAVE_PORT
+# -- Compiling module AHB_INTERCONNECT
+# -- Compiling module AHB_ARB
+# -- Compiling module AHB_ARB_RB
+# -- Compiling module ahb_lite_sdram
+# -- Compiling module sdr
+# -- Compiling module RAM
+# -- Compiling module RAM_FPGA
+# -- Compiling module RAM128KB_DP
+# -- Compiling module PORT
+# -- Compiling module UART
+# -- Compiling module sasc_top
+# -- Compiling module sasc_fifo4
+# -- Compiling module sasc_brg
+# -- Compiling module I2C
+# -- Compiling module i2c_master_top
+# -- Compiling module i2c_master_bit_ctrl
+# -- Compiling module i2c_master_byte_ctrl
+# -- Compiling module i2c_slave_model
+# -- Compiling module SPI
+# -- Compiling module simple_spi_top
+# -- Compiling module fifo4
+# -- Compiling module RISCV_TOP
+# -- Compiling module FPGA_TOP
+# -- Compiling module PLL
+# -- Compiling module tb_TOP
+# 
+# Top level modules:
+# 	tt_um_munetomomaruyama_CPU
+# 	tb_TOP
+# End time: 21:21:02 on Jun 03,2025, Elapsed time: 0:00:04
+# Errors: 0, Warnings: 0
+# End time: 21:21:07 on Jun 03,2025, Elapsed time: 0:15:08
+# Errors: 0, Warnings: 2
+# vsim -c -voptargs=""+acc"" -L altera_mf_ver work.tb_TOP 
+# Start time: 21:21:08 on Jun 03,2025
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Loading sv_std.std
+# Loading work.tb_TOP(fast)
+# Loading work.FPGA_TOP(fast)
+# Loading work.MCS4_CPU_CHIP(fast)
+# Loading work.MCS4_CPU_CORE(fast)
+# Loading work.MCS4_SYS(fast)
+# Loading work.MCS4_ROM(fast)
+# Loading work.ROM4KB_SP(fast)
+# Loading altera_mf_ver.altsyncram(fast)
+# Loading altera_mf_ver.altsyncram_body(fast)
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES(fast)
+# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION(fast)
+# Loading work.MCS4_RAM(fast)
+# Loading work.KEY_PRINTER(fast)
+# Loading work.MCS4_SHIFTER(fast)
+# Loading work.PLL(fast)
+# Loading altera_mf_ver.altpll(fast)
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES(fast__1)
+# Loading altera_mf_ver.MF_cycloneiii_pll(fast)
+# Loading altera_mf_ver.cda_m_cntr(fast)
+# Loading altera_mf_ver.cda_n_cntr(fast)
+# Loading altera_mf_ver.cda_scale_cntr(fast)
+# Loading altera_mf_ver.pll_iobuf(fast)
+# Loading work.RISCV_TOP(fast)
+# Loading work.mmRISC(fast)
+# Loading work.DEBUG_TOP(fast)
+# Loading work.DEBUG_DTM_JTAG(fast)
+# Loading work.DEBUG_CDC(fast)
+# Loading work.DEBUG_DM(fast)
+# Loading work.CPU_TOP(fast)
+# Loading work.CPU_FETCH(fast)
+# Loading work.CPU_DATAPATH(fast)
+# Loading work.CPU_PIPELINE(fast)
+# Loading work.CPU_CSR(fast)
+# Loading work.CPU_CSR_INT(fast)
+# Loading work.CPU_CSR_DBG(fast)
+# Loading work.CPU_DEBUG(fast)
+# Loading work.CPU_FPU32(fast)
+# Loading work.FMUL_SPECIAL_NUMBER(fast)
+# Loading work.CHECK_FTYPE(fast)
+# Loading work.FADD_SPECIAL_NUMBER(fast)
+# Loading work.FMADD_SPECIAL_NUMBER(fast)
+# Loading work.FDIV_SPECIAL_NUMBER(fast)
+# Loading work.FSQRT_SPECIAL_NUMBER(fast)
+# Loading work.INNER79_FROM_FLOAT32(fast)
+# Loading work.FIND_1ST_ONE_IN_FRAC66(fast)
+# Loading work.FMUL_CORE(fast)
+# Loading work.FRAC70_ROUND_FRAC132(fast)
+# Loading work.ROUND_JUDGMENT(fast)
+# Loading work.FIND_1ST_ONE_IN_FRAC70(fast)
+# Loading work.SHIFT_RIGHT_FRAC70(fast)
+# Loading work.FADD_CORE(fast)
+# Loading work.SHIFT_RIGHT_FRAC66(fast)
+# Loading work.FLOAT32_FROM_INNER79(fast)
+# Loading work.FRAC27_ROUND_FRAC66(fast)
+# Loading work.FIND_1ST_ONE_IN_FRAC27(fast)
+# Loading work.SHIFT_RIGHT_FRAC27(fast)
+# Loading work.FCVT_F2I(fast)
+# Loading work.FCVT_I2F(fast)
+# Loading work.BUS_M_AHB(fast)
+# Loading work.AHB_MATRIX(fast)
+# Loading work.AHB_MASTER_PORT(fast)
+# Loading work.AHB_INTERCONNECT(fast)
+# Loading work.AHB_ARB(fast)
+# Loading work.AHB_ARB_RB(fast)
+# Loading work.AHB_SLAVE_PORT(fast)
+# Loading work.CSR_MTIME(fast)
+# Loading work.ahb_lite_sdram(fast)
+# Loading work.RAM(fast)
+# Loading work.RAM_FPGA(fast)
+# Loading work.RAM128KB_DP(fast)
+# Loading altera_mf_ver.altsyncram(fast__1)
+# Loading altera_mf_ver.altsyncram_body(fast__1)
+# Loading work.PORT(fast)
+# Loading work.UART(fast)
+# Loading work.sasc_top(fast)
+# Loading work.sasc_fifo4(fast)
+# Loading work.sasc_brg(fast)
+# Loading work.INT_GEN(fast)
+# Loading work.I2C(fast)
+# Loading work.i2c_master_top(fast)
+# Loading work.i2c_master_byte_ctrl(fast)
+# Loading work.i2c_master_bit_ctrl(fast)
+# Loading work.SPI(fast)
+# Loading work.simple_spi_top(fast)
+# Loading work.fifo4(fast)
+# Loading work.i2c_slave_model(fast)
+# Loading work.sdr(fast)
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: taka  Hostname: PC-8001  ProcessID: 15560
+#           Attempting to use alternate WLF file "./wlftj4195k".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftj4195k
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_TOP.U_FPGA_TOP.U_RISCV_TOP.U_RAMI.U_RAM128KB_DP.altsyncram_component.m_default.altsyncram_inst
+#  Note : MAX 10 PLL locked to incoming clock
+# Time: 90.0 ns  Instance: tb_TOP.U_FPGA_TOP.U_PLL.altpll_component.cycloneiii_pll.pll3
+add wave -position 11  sim:/tb_TOP/U_FPGA_TOP/U_RISCV_TOP/U_CSR_MTIME/MTIME
+add wave -position 12  sim:/tb_TOP/U_FPGA_TOP/U_RISCV_TOP/U_CSR_MTIME/MTIMEH
+add wave -position 13  sim:/tb_TOP/U_FPGA_TOP/U_RISCV_TOP/U_MMRISC/U_CPU_TOP[0]/U_CPU_TOP/U_CPU_CSR/csr_mcycle
+add wave -position 14  sim:/tb_TOP/U_FPGA_TOP/U_RISCV_TOP/U_MMRISC/U_CPU_TOP[0]/U_CPU_TOP/U_CPU_CSR/csr_mcycleh
+
+
+
+do sim_TOP.do
+# ../../src
+# ../RTL/MCS4
+# ../RTL/FPGA_TOP
+# ../RTL/RISCV
+# ../FPGA
+# ../SIM_questa
+# ** Warning: (vlib-34) Library already exists at "work".
+# Errors: 0, Warnings: 1
+# Questa Intel Starter FPGA Edition-64 vmap 2021.2 Lib Mapping Utility 2021.04 Apr 14 2021
+# vmap work work 
+# Modifying modelsim.ini
+# Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 21:28:49 on Jun 03,2025
+# vlog -reportprogress 300 -work work -sv "+incdir+../RTL/RISCV/common" "+incdir+../RTL/RISCV/ahb_sdram/model" "+incdir+../RTL/RISCV/i2c/i2c/trunk/rtl/verilog" -timescale=1ns/100ps "+define+SIMULATION" "+define+FPGA" "+define+den512Mb" "+define+sg75" "+define+x16" ../../src/tt_um_munetomomaruyama_CPU.v ../RTL/MCS4/mcs4_cpu_chip.v ../RTL/MCS4/mcs4_cpu_core.v ../RTL/MCS4/mcs4_sys.v ../RTL/MCS4/mcs4_rom_fpga.v ../FPGA/ROM4KB_SP.v ../RTL/MCS4/mcs4_ram.v ../RTL/MCS4/key_printer.v ../RTL/MCS4/mcs4_shifter.v ../RTL/RISCV/mmRISC/mmRISC.v ../RTL/RISCV/mmRISC/bus_m_ahb.v ../RTL/RISCV/mmRISC/csr_mtime.v ../RTL/RISCV/cpu/cpu_top.v ../RTL/RISCV/cpu/cpu_fetch.v ../RTL/RISCV/cpu/cpu_datapath.v ../RTL/RISCV/cpu/cpu_pipeline.v ../RTL/RISCV/cpu/cpu_fpu32.v ../RTL/RISCV/cpu/cpu_csr.v ../RTL/RISCV/cpu/cpu_csr_int.v ../RTL/RISCV/cpu/cpu_csr_dbg.v ../RTL/RISCV/cpu/cpu_debug.v ../RTL/RISCV/debug/debug_top.v ../RTL/RISCV/debug/debug_dtm_jtag.v ../RTL/RISCV/debug/debug_cdc.v ../RTL/RISCV/debug/debug_dm.v ../RTL/RISCV/int_gen/int_gen.v ../RTL/RISCV/ahb_matrix/ahb_top.v ../RTL/RISCV/ahb_matrix/ahb_master_port.v ../RTL/RISCV/ahb_matrix/ahb_slave_port.v ../RTL/RISCV/ahb_matrix/ahb_interconnect.v ../RTL/RISCV/ahb_matrix/ahb_arb.v ../RTL/RISCV/ahb_sdram/logic/ahb_lite_sdram.v ../RTL/RISCV/ahb_sdram/model/sdr.v ../RTL/RISCV/ram/ram.v ../RTL/RISCV/ram/ram_fpga.v ../FPGA/RAM128KB_DP.v ../RTL/RISCV/port/port.v ../RTL/RISCV/uart/uart.v ../RTL/RISCV/uart/sasc/trunk/rtl/verilog/sasc_top.v ../RTL/RISCV/uart/sasc/trunk/rtl/verilog/sasc_fifo4.v ../RTL/RISCV/uart/sasc/trunk/rtl/verilog/sasc_brg.v ../RTL/RISCV/i2c/i2c.v ../RTL/RISCV/i2c/i2c/trunk/rtl/verilog/i2c_master_top.v ../RTL/RISCV/i2c/i2c/trunk/rtl/verilog/i2c_master_bit_ctrl.v ../RTL/RISCV/i2c/i2c/trunk/rtl/verilog/i2c_master_byte_ctrl.v ../RTL/RISCV/i2c/i2c_slave_model.v ../RTL/RISCV/spi/spi.v ../RTL/RISCV/spi/simple_spi/trunk/rtl/verilog/simple_spi_top.v ../RTL/RISCV/spi/simple_spi/trunk/rtl/verilog/fifo4.v ../RTL/RISCV/riscv_top/riscv_top.v ../RTL/FPGA_TOP/fpga_top.v ../FPGA/PLL.v ../SIM_questa/tb_TOP.v 
+# -- Compiling module tt_um_munetomomaruyama_CPU
+# -- Compiling module MCS4_CPU_CHIP
+# -- Compiling module MCS4_CPU_CORE
+# -- Compiling module MCS4_SYS
+# -- Compiling module MCS4_ROM
+# -- Compiling module ROM4KB_SP
+# -- Compiling module MCS4_RAM
+# -- Compiling module KEY_PRINTER
+# -- Compiling module MCS4_SHIFTER
+# -- Compiling module mmRISC
+# -- Compiling module BUS_M_AHB
+# -- Compiling module CSR_MTIME
+# -- Compiling module CPU_TOP
+# -- Compiling module CPU_FETCH
+# -- Compiling module CPU_DATAPATH
+# -- Compiling module CPU_PIPELINE
+# -- Compiling module CPU_FPU32
+# -- Compiling module CHECK_FTYPE
+# -- Compiling module FADD_SPECIAL_NUMBER
+# -- Compiling module FMUL_SPECIAL_NUMBER
+# -- Compiling module FMADD_SPECIAL_NUMBER
+# -- Compiling module FDIV_SPECIAL_NUMBER
+# -- Compiling module FSQRT_SPECIAL_NUMBER
+# -- Compiling module FIND_1ST_ONE_IN_FRAC27
+# -- Compiling module FIND_1ST_ONE_IN_FRAC66
+# -- Compiling module FIND_1ST_ONE_IN_FRAC70
+# -- Compiling module SHIFT_RIGHT_FRAC27
+# -- Compiling module SHIFT_RIGHT_FRAC66
+# -- Compiling module SHIFT_RIGHT_FRAC70
+# -- Compiling module ROUND_JUDGMENT
+# -- Compiling module FRAC27_ROUND_FRAC66
+# -- Compiling module FRAC70_ROUND_FRAC132
+# -- Compiling module INNER79_FROM_FLOAT32
+# -- Compiling module FLOAT32_FROM_INNER79
+# -- Compiling module FADD_CORE
+# -- Compiling module FMUL_CORE
+# -- Compiling module FCVT_F2I
+# -- Compiling module FCVT_I2F
+# -- Compiling module CPU_CSR
+# -- Compiling module CPU_CSR_INT
+# -- Compiling module CPU_CSR_DBG
+# -- Compiling module CPU_DEBUG
+# -- Compiling module DEBUG_TOP
+# -- Compiling module DEBUG_DTM_JTAG
+# -- Compiling module DEBUG_CDC
+# -- Compiling module DEBUG_DM
+# -- Compiling module INT_GEN
+# -- Compiling module AHB_MATRIX
+# -- Compiling module AHB_MASTER_PORT
+# -- Compiling module AHB_SLAVE_PORT
+# -- Compiling module AHB_INTERCONNECT
+# -- Compiling module AHB_ARB
+# -- Compiling module AHB_ARB_RB
+# -- Compiling module ahb_lite_sdram
+# -- Compiling module sdr
+# -- Compiling module RAM
+# -- Compiling module RAM_FPGA
+# -- Compiling module RAM128KB_DP
+# -- Compiling module PORT
+# -- Compiling module UART
+# -- Compiling module sasc_top
+# -- Compiling module sasc_fifo4
+# -- Compiling module sasc_brg
+# -- Compiling module I2C
+# -- Compiling module i2c_master_top
+# -- Compiling module i2c_master_bit_ctrl
+# -- Compiling module i2c_master_byte_ctrl
+# -- Compiling module i2c_slave_model
+# -- Compiling module SPI
+# -- Compiling module simple_spi_top
+# -- Compiling module fifo4
+# -- Compiling module RISCV_TOP
+# -- Compiling module FPGA_TOP
+# -- Compiling module PLL
+# -- Compiling module tb_TOP
+# 
+# Top level modules:
+# 	tt_um_munetomomaruyama_CPU
+# 	tb_TOP
+# End time: 21:28:53 on Jun 03,2025, Elapsed time: 0:00:04
+# Errors: 0, Warnings: 0
+# End time: 21:28:59 on Jun 03,2025, Elapsed time: 0:07:51
+# Errors: 0, Warnings: 2
+# vsim -c -voptargs=""+acc"" -L altera_mf_ver work.tb_TOP 
+# Start time: 21:28:59 on Jun 03,2025
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Loading sv_std.std
+# Loading work.tb_TOP(fast)
+# Loading work.FPGA_TOP(fast)
+# Loading work.MCS4_CPU_CHIP(fast)
+# Loading work.MCS4_CPU_CORE(fast)
+# Loading work.MCS4_SYS(fast)
+# Loading work.MCS4_ROM(fast)
+# Loading work.ROM4KB_SP(fast)
+# Loading altera_mf_ver.altsyncram(fast)
+# Loading altera_mf_ver.altsyncram_body(fast)
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES(fast)
+# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION(fast)
+# Loading work.MCS4_RAM(fast)
+# Loading work.KEY_PRINTER(fast)
+# Loading work.MCS4_SHIFTER(fast)
+# Loading work.PLL(fast)
+# Loading altera_mf_ver.altpll(fast)
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES(fast__1)
+# Loading altera_mf_ver.MF_cycloneiii_pll(fast)
+# Loading altera_mf_ver.cda_m_cntr(fast)
+# Loading altera_mf_ver.cda_n_cntr(fast)
+# Loading altera_mf_ver.cda_scale_cntr(fast)
+# Loading altera_mf_ver.pll_iobuf(fast)
+# Loading work.RISCV_TOP(fast)
+# Loading work.mmRISC(fast)
+# Loading work.DEBUG_TOP(fast)
+# Loading work.DEBUG_DTM_JTAG(fast)
+# Loading work.DEBUG_CDC(fast)
+# Loading work.DEBUG_DM(fast)
+# Loading work.CPU_TOP(fast)
+# Loading work.CPU_FETCH(fast)
+# Loading work.CPU_DATAPATH(fast)
+# Loading work.CPU_PIPELINE(fast)
+# Loading work.CPU_CSR(fast)
+# Loading work.CPU_CSR_INT(fast)
+# Loading work.CPU_CSR_DBG(fast)
+# Loading work.CPU_DEBUG(fast)
+# Loading work.CPU_FPU32(fast)
+# Loading work.FMUL_SPECIAL_NUMBER(fast)
+# Loading work.CHECK_FTYPE(fast)
+# Loading work.FADD_SPECIAL_NUMBER(fast)
+# Loading work.FMADD_SPECIAL_NUMBER(fast)
+# Loading work.FDIV_SPECIAL_NUMBER(fast)
+# Loading work.FSQRT_SPECIAL_NUMBER(fast)
+# Loading work.INNER79_FROM_FLOAT32(fast)
+# Loading work.FIND_1ST_ONE_IN_FRAC66(fast)
+# Loading work.FMUL_CORE(fast)
+# Loading work.FRAC70_ROUND_FRAC132(fast)
+# Loading work.ROUND_JUDGMENT(fast)
+# Loading work.FIND_1ST_ONE_IN_FRAC70(fast)
+# Loading work.SHIFT_RIGHT_FRAC70(fast)
+# Loading work.FADD_CORE(fast)
+# Loading work.SHIFT_RIGHT_FRAC66(fast)
+# Loading work.FLOAT32_FROM_INNER79(fast)
+# Loading work.FRAC27_ROUND_FRAC66(fast)
+# Loading work.FIND_1ST_ONE_IN_FRAC27(fast)
+# Loading work.SHIFT_RIGHT_FRAC27(fast)
+# Loading work.FCVT_F2I(fast)
+# Loading work.FCVT_I2F(fast)
+# Loading work.BUS_M_AHB(fast)
+# Loading work.AHB_MATRIX(fast)
+# Loading work.AHB_MASTER_PORT(fast)
+# Loading work.AHB_INTERCONNECT(fast)
+# Loading work.AHB_ARB(fast)
+# Loading work.AHB_ARB_RB(fast)
+# Loading work.AHB_SLAVE_PORT(fast)
+# Loading work.CSR_MTIME(fast)
+# Loading work.ahb_lite_sdram(fast)
+# Loading work.RAM(fast)
+# Loading work.RAM_FPGA(fast)
+# Loading work.RAM128KB_DP(fast)
+# Loading altera_mf_ver.altsyncram(fast__1)
+# Loading altera_mf_ver.altsyncram_body(fast__1)
+# Loading work.PORT(fast)
+# Loading work.UART(fast)
+# Loading work.sasc_top(fast)
+# Loading work.sasc_fifo4(fast)
+# Loading work.sasc_brg(fast)
+# Loading work.INT_GEN(fast)
+# Loading work.I2C(fast)
+# Loading work.i2c_master_top(fast)
+# Loading work.i2c_master_byte_ctrl(fast)
+# Loading work.i2c_master_bit_ctrl(fast)
+# Loading work.SPI(fast)
+# Loading work.simple_spi_top(fast)
+# Loading work.fifo4(fast)
+# Loading work.i2c_slave_model(fast)
+# Loading work.sdr(fast)
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: taka  Hostname: PC-8001  ProcessID: 15560
+#           Attempting to use alternate WLF file "./wlfte4tkvk".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlfte4tkvk
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_TOP.U_FPGA_TOP.U_RISCV_TOP.U_RAMI.U_RAM128KB_DP.altsyncram_component.m_default.altsyncram_inst
+#  Note : MAX 10 PLL locked to incoming clock
+# Time: 90.0 ns  Instance: tb_TOP.U_FPGA_TOP.U_PLL.altpll_component.cycloneiii_pll.pll3
+
+do sim_TOP.do
+# ../../src
+# ../RTL/MCS4
+# ../RTL/FPGA_TOP
+# ../RTL/RISCV
+# ../FPGA
+# ../SIM_questa
+# ** Warning: (vlib-34) Library already exists at "work".
+# Errors: 0, Warnings: 1
+# Questa Intel Starter FPGA Edition-64 vmap 2021.2 Lib Mapping Utility 2021.04 Apr 14 2021
+# vmap work work 
+# Modifying modelsim.ini
+# Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 21:43:10 on Jun 03,2025
+# vlog -reportprogress 300 -work work -sv "+incdir+../RTL/RISCV/common" "+incdir+../RTL/RISCV/ahb_sdram/model" "+incdir+../RTL/RISCV/i2c/i2c/trunk/rtl/verilog" -timescale=1ns/100ps "+define+SIMULATION" "+define+FPGA" "+define+den512Mb" "+define+sg75" "+define+x16" ../../src/tt_um_munetomomaruyama_CPU.v ../RTL/MCS4/mcs4_cpu_chip.v ../RTL/MCS4/mcs4_cpu_core.v ../RTL/MCS4/mcs4_sys.v ../RTL/MCS4/mcs4_rom_fpga.v ../FPGA/ROM4KB_SP.v ../RTL/MCS4/mcs4_ram.v ../RTL/MCS4/key_printer.v ../RTL/MCS4/mcs4_shifter.v ../RTL/RISCV/mmRISC/mmRISC.v ../RTL/RISCV/mmRISC/bus_m_ahb.v ../RTL/RISCV/mmRISC/csr_mtime.v ../RTL/RISCV/cpu/cpu_top.v ../RTL/RISCV/cpu/cpu_fetch.v ../RTL/RISCV/cpu/cpu_datapath.v ../RTL/RISCV/cpu/cpu_pipeline.v ../RTL/RISCV/cpu/cpu_fpu32.v ../RTL/RISCV/cpu/cpu_csr.v ../RTL/RISCV/cpu/cpu_csr_int.v ../RTL/RISCV/cpu/cpu_csr_dbg.v ../RTL/RISCV/cpu/cpu_debug.v ../RTL/RISCV/debug/debug_top.v ../RTL/RISCV/debug/debug_dtm_jtag.v ../RTL/RISCV/debug/debug_cdc.v ../RTL/RISCV/debug/debug_dm.v ../RTL/RISCV/int_gen/int_gen.v ../RTL/RISCV/ahb_matrix/ahb_top.v ../RTL/RISCV/ahb_matrix/ahb_master_port.v ../RTL/RISCV/ahb_matrix/ahb_slave_port.v ../RTL/RISCV/ahb_matrix/ahb_interconnect.v ../RTL/RISCV/ahb_matrix/ahb_arb.v ../RTL/RISCV/ahb_sdram/logic/ahb_lite_sdram.v ../RTL/RISCV/ahb_sdram/model/sdr.v ../RTL/RISCV/ram/ram.v ../RTL/RISCV/ram/ram_fpga.v ../FPGA/RAM128KB_DP.v ../RTL/RISCV/port/port.v ../RTL/RISCV/uart/uart.v ../RTL/RISCV/uart/sasc/trunk/rtl/verilog/sasc_top.v ../RTL/RISCV/uart/sasc/trunk/rtl/verilog/sasc_fifo4.v ../RTL/RISCV/uart/sasc/trunk/rtl/verilog/sasc_brg.v ../RTL/RISCV/i2c/i2c.v ../RTL/RISCV/i2c/i2c/trunk/rtl/verilog/i2c_master_top.v ../RTL/RISCV/i2c/i2c/trunk/rtl/verilog/i2c_master_bit_ctrl.v ../RTL/RISCV/i2c/i2c/trunk/rtl/verilog/i2c_master_byte_ctrl.v ../RTL/RISCV/i2c/i2c_slave_model.v ../RTL/RISCV/spi/spi.v ../RTL/RISCV/spi/simple_spi/trunk/rtl/verilog/simple_spi_top.v ../RTL/RISCV/spi/simple_spi/trunk/rtl/verilog/fifo4.v ../RTL/RISCV/riscv_top/riscv_top.v ../RTL/FPGA_TOP/fpga_top.v ../FPGA/PLL.v ../SIM_questa/tb_TOP.v 
+# -- Compiling module tt_um_munetomomaruyama_CPU
+# -- Compiling module MCS4_CPU_CHIP
+# -- Compiling module MCS4_CPU_CORE
+# -- Compiling module MCS4_SYS
+# -- Compiling module MCS4_ROM
+# -- Compiling module ROM4KB_SP
+# -- Compiling module MCS4_RAM
+# -- Compiling module KEY_PRINTER
+# -- Compiling module MCS4_SHIFTER
+# -- Compiling module mmRISC
+# -- Compiling module BUS_M_AHB
+# -- Compiling module CSR_MTIME
+# -- Compiling module CPU_TOP
+# -- Compiling module CPU_FETCH
+# -- Compiling module CPU_DATAPATH
+# -- Compiling module CPU_PIPELINE
+# -- Compiling module CPU_FPU32
+# -- Compiling module CHECK_FTYPE
+# -- Compiling module FADD_SPECIAL_NUMBER
+# -- Compiling module FMUL_SPECIAL_NUMBER
+# -- Compiling module FMADD_SPECIAL_NUMBER
+# -- Compiling module FDIV_SPECIAL_NUMBER
+# -- Compiling module FSQRT_SPECIAL_NUMBER
+# -- Compiling module FIND_1ST_ONE_IN_FRAC27
+# -- Compiling module FIND_1ST_ONE_IN_FRAC66
+# -- Compiling module FIND_1ST_ONE_IN_FRAC70
+# -- Compiling module SHIFT_RIGHT_FRAC27
+# -- Compiling module SHIFT_RIGHT_FRAC66
+# -- Compiling module SHIFT_RIGHT_FRAC70
+# -- Compiling module ROUND_JUDGMENT
+# -- Compiling module FRAC27_ROUND_FRAC66
+# -- Compiling module FRAC70_ROUND_FRAC132
+# -- Compiling module INNER79_FROM_FLOAT32
+# -- Compiling module FLOAT32_FROM_INNER79
+# -- Compiling module FADD_CORE
+# -- Compiling module FMUL_CORE
+# -- Compiling module FCVT_F2I
+# -- Compiling module FCVT_I2F
+# -- Compiling module CPU_CSR
+# -- Compiling module CPU_CSR_INT
+# -- Compiling module CPU_CSR_DBG
+# -- Compiling module CPU_DEBUG
+# -- Compiling module DEBUG_TOP
+# -- Compiling module DEBUG_DTM_JTAG
+# -- Compiling module DEBUG_CDC
+# -- Compiling module DEBUG_DM
+# -- Compiling module INT_GEN
+# -- Compiling module AHB_MATRIX
+# -- Compiling module AHB_MASTER_PORT
+# -- Compiling module AHB_SLAVE_PORT
+# -- Compiling module AHB_INTERCONNECT
+# -- Compiling module AHB_ARB
+# -- Compiling module AHB_ARB_RB
+# -- Compiling module ahb_lite_sdram
+# -- Compiling module sdr
+# -- Compiling module RAM
+# -- Compiling module RAM_FPGA
+# -- Compiling module RAM128KB_DP
+# -- Compiling module PORT
+# -- Compiling module UART
+# -- Compiling module sasc_top
+# -- Compiling module sasc_fifo4
+# -- Compiling module sasc_brg
+# -- Compiling module I2C
+# -- Compiling module i2c_master_top
+# -- Compiling module i2c_master_bit_ctrl
+# -- Compiling module i2c_master_byte_ctrl
+# -- Compiling module i2c_slave_model
+# -- Compiling module SPI
+# -- Compiling module simple_spi_top
+# -- Compiling module fifo4
+# -- Compiling module RISCV_TOP
+# -- Compiling module FPGA_TOP
+# -- Compiling module PLL
+# -- Compiling module tb_TOP
+# 
+# Top level modules:
+# 	tt_um_munetomomaruyama_CPU
+# 	tb_TOP
+# End time: 21:43:14 on Jun 03,2025, Elapsed time: 0:00:04
+# Errors: 0, Warnings: 0
+# End time: 21:43:24 on Jun 03,2025, Elapsed time: 0:14:25
+# Errors: 0, Warnings: 2
+# vsim -c -voptargs=""+acc"" -L altera_mf_ver work.tb_TOP 
+# Start time: 21:43:24 on Jun 03,2025
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading sv_std.std
+# Loading work.tb_TOP(fast)
+# Loading work.FPGA_TOP(fast)
+# Loading work.MCS4_CPU_CHIP(fast)
+# Loading work.MCS4_CPU_CORE(fast)
+# Loading work.MCS4_SYS(fast)
+# Loading work.MCS4_ROM(fast)
+# Loading work.ROM4KB_SP(fast)
+# Loading altera_mf_ver.altsyncram(fast)
+# Loading altera_mf_ver.altsyncram_body(fast)
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES(fast)
+# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION(fast)
+# Loading work.MCS4_RAM(fast)
+# Loading work.KEY_PRINTER(fast)
+# Loading work.MCS4_SHIFTER(fast)
+# Loading work.PLL(fast)
+# Loading altera_mf_ver.altpll(fast)
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES(fast__1)
+# Loading altera_mf_ver.MF_cycloneiii_pll(fast)
+# Loading altera_mf_ver.cda_m_cntr(fast)
+# Loading altera_mf_ver.cda_n_cntr(fast)
+# Loading altera_mf_ver.cda_scale_cntr(fast)
+# Loading altera_mf_ver.pll_iobuf(fast)
+# Loading work.RISCV_TOP(fast)
+# Loading work.mmRISC(fast)
+# Loading work.DEBUG_TOP(fast)
+# Loading work.DEBUG_DTM_JTAG(fast)
+# Loading work.DEBUG_CDC(fast)
+# Loading work.DEBUG_DM(fast)
+# Loading work.CPU_TOP(fast)
+# Loading work.CPU_FETCH(fast)
+# Loading work.CPU_DATAPATH(fast)
+# Loading work.CPU_PIPELINE(fast)
+# Loading work.CPU_CSR(fast)
+# Loading work.CPU_CSR_INT(fast)
+# Loading work.CPU_CSR_DBG(fast)
+# Loading work.CPU_DEBUG(fast)
+# Loading work.CPU_FPU32(fast)
+# Loading work.FMUL_SPECIAL_NUMBER(fast)
+# Loading work.CHECK_FTYPE(fast)
+# Loading work.FADD_SPECIAL_NUMBER(fast)
+# Loading work.FMADD_SPECIAL_NUMBER(fast)
+# Loading work.FDIV_SPECIAL_NUMBER(fast)
+# Loading work.FSQRT_SPECIAL_NUMBER(fast)
+# Loading work.INNER79_FROM_FLOAT32(fast)
+# Loading work.FIND_1ST_ONE_IN_FRAC66(fast)
+# Loading work.FMUL_CORE(fast)
+# Loading work.FRAC70_ROUND_FRAC132(fast)
+# Loading work.ROUND_JUDGMENT(fast)
+# Loading work.FIND_1ST_ONE_IN_FRAC70(fast)
+# Loading work.SHIFT_RIGHT_FRAC70(fast)
+# Loading work.FADD_CORE(fast)
+# Loading work.SHIFT_RIGHT_FRAC66(fast)
+# Loading work.FLOAT32_FROM_INNER79(fast)
+# Loading work.FRAC27_ROUND_FRAC66(fast)
+# Loading work.FIND_1ST_ONE_IN_FRAC27(fast)
+# Loading work.SHIFT_RIGHT_FRAC27(fast)
+# Loading work.FCVT_F2I(fast)
+# Loading work.FCVT_I2F(fast)
+# Loading work.BUS_M_AHB(fast)
+# Loading work.AHB_MATRIX(fast)
+# Loading work.AHB_MASTER_PORT(fast)
+# Loading work.AHB_INTERCONNECT(fast)
+# Loading work.AHB_ARB(fast)
+# Loading work.AHB_ARB_RB(fast)
+# Loading work.AHB_SLAVE_PORT(fast)
+# Loading work.CSR_MTIME(fast)
+# Loading work.ahb_lite_sdram(fast)
+# Loading work.RAM(fast)
+# Loading work.RAM_FPGA(fast)
+# Loading work.RAM128KB_DP(fast)
+# Loading altera_mf_ver.altsyncram(fast__1)
+# Loading altera_mf_ver.altsyncram_body(fast__1)
+# Loading work.PORT(fast)
+# Loading work.UART(fast)
+# Loading work.sasc_top(fast)
+# Loading work.sasc_fifo4(fast)
+# Loading work.sasc_brg(fast)
+# Loading work.INT_GEN(fast)
+# Loading work.I2C(fast)
+# Loading work.i2c_master_top(fast)
+# Loading work.i2c_master_byte_ctrl(fast)
+# Loading work.i2c_master_bit_ctrl(fast)
+# Loading work.SPI(fast)
+# Loading work.simple_spi_top(fast)
+# Loading work.fifo4(fast)
+# Loading work.i2c_slave_model(fast)
+# Loading work.sdr(fast)
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: taka  Hostname: PC-8001  ProcessID: 15560
+#           Attempting to use alternate WLF file "./wlftbsh978".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftbsh978
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_TOP.U_FPGA_TOP.U_RISCV_TOP.U_RAMI.U_RAM128KB_DP.altsyncram_component.m_default.altsyncram_inst
+#  Note : MAX 10 PLL locked to incoming clock
+# Time: 90.0 ns  Instance: tb_TOP.U_FPGA_TOP.U_PLL.altpll_component.cycloneiii_pll.pll3
+# ***** DETECT FINAL STIMULUS *****
+# ** Note: $stop    : ../SIM_questa/tb_TOP.v(102)
+#    Time: 2 ms  Iteration: 1  Instance: /tb_TOP
+# Break in Module tb_TOP at ../SIM_questa/tb_TOP.v line 102
+do sim_TOP.do
+# ../../src
+# ../RTL/MCS4
+# ../RTL/FPGA_TOP
+# ../RTL/RISCV
+# ../FPGA
+# ../SIM_questa
+# ** Warning: (vlib-34) Library already exists at "work".
+# Errors: 0, Warnings: 1
+# Questa Intel Starter FPGA Edition-64 vmap 2021.2 Lib Mapping Utility 2021.04 Apr 14 2021
+# vmap work work 
+# Modifying modelsim.ini
+# Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 22:01:26 on Jun 03,2025
+# vlog -reportprogress 300 -work work -sv "+incdir+../RTL/RISCV/common" "+incdir+../RTL/RISCV/ahb_sdram/model" "+incdir+../RTL/RISCV/i2c/i2c/trunk/rtl/verilog" -timescale=1ns/100ps "+define+SIMULATION" "+define+FPGA" "+define+den512Mb" "+define+sg75" "+define+x16" ../../src/tt_um_munetomomaruyama_CPU.v ../RTL/MCS4/mcs4_cpu_chip.v ../RTL/MCS4/mcs4_cpu_core.v ../RTL/MCS4/mcs4_sys.v ../RTL/MCS4/mcs4_rom_fpga.v ../FPGA/ROM4KB_SP.v ../RTL/MCS4/mcs4_ram.v ../RTL/MCS4/key_printer.v ../RTL/MCS4/mcs4_shifter.v ../RTL/RISCV/mmRISC/mmRISC.v ../RTL/RISCV/mmRISC/bus_m_ahb.v ../RTL/RISCV/mmRISC/csr_mtime.v ../RTL/RISCV/cpu/cpu_top.v ../RTL/RISCV/cpu/cpu_fetch.v ../RTL/RISCV/cpu/cpu_datapath.v ../RTL/RISCV/cpu/cpu_pipeline.v ../RTL/RISCV/cpu/cpu_fpu32.v ../RTL/RISCV/cpu/cpu_csr.v ../RTL/RISCV/cpu/cpu_csr_int.v ../RTL/RISCV/cpu/cpu_csr_dbg.v ../RTL/RISCV/cpu/cpu_debug.v ../RTL/RISCV/debug/debug_top.v ../RTL/RISCV/debug/debug_dtm_jtag.v ../RTL/RISCV/debug/debug_cdc.v ../RTL/RISCV/debug/debug_dm.v ../RTL/RISCV/int_gen/int_gen.v ../RTL/RISCV/ahb_matrix/ahb_top.v ../RTL/RISCV/ahb_matrix/ahb_master_port.v ../RTL/RISCV/ahb_matrix/ahb_slave_port.v ../RTL/RISCV/ahb_matrix/ahb_interconnect.v ../RTL/RISCV/ahb_matrix/ahb_arb.v ../RTL/RISCV/ahb_sdram/logic/ahb_lite_sdram.v ../RTL/RISCV/ahb_sdram/model/sdr.v ../RTL/RISCV/ram/ram.v ../RTL/RISCV/ram/ram_fpga.v ../FPGA/RAM128KB_DP.v ../RTL/RISCV/port/port.v ../RTL/RISCV/uart/uart.v ../RTL/RISCV/uart/sasc/trunk/rtl/verilog/sasc_top.v ../RTL/RISCV/uart/sasc/trunk/rtl/verilog/sasc_fifo4.v ../RTL/RISCV/uart/sasc/trunk/rtl/verilog/sasc_brg.v ../RTL/RISCV/i2c/i2c.v ../RTL/RISCV/i2c/i2c/trunk/rtl/verilog/i2c_master_top.v ../RTL/RISCV/i2c/i2c/trunk/rtl/verilog/i2c_master_bit_ctrl.v ../RTL/RISCV/i2c/i2c/trunk/rtl/verilog/i2c_master_byte_ctrl.v ../RTL/RISCV/i2c/i2c_slave_model.v ../RTL/RISCV/spi/spi.v ../RTL/RISCV/spi/simple_spi/trunk/rtl/verilog/simple_spi_top.v ../RTL/RISCV/spi/simple_spi/trunk/rtl/verilog/fifo4.v ../RTL/RISCV/riscv_top/riscv_top.v ../RTL/FPGA_TOP/fpga_top.v ../FPGA/PLL.v ../SIM_questa/tb_TOP.v 
+# -- Compiling module tt_um_munetomomaruyama_CPU
+# -- Compiling module MCS4_CPU_CHIP
+# -- Compiling module MCS4_CPU_CORE
+# -- Compiling module MCS4_SYS
+# -- Compiling module MCS4_ROM
+# -- Compiling module ROM4KB_SP
+# -- Compiling module MCS4_RAM
+# -- Compiling module KEY_PRINTER
+# -- Compiling module MCS4_SHIFTER
+# -- Compiling module mmRISC
+# -- Compiling module BUS_M_AHB
+# -- Compiling module CSR_MTIME
+# -- Compiling module CPU_TOP
+# -- Compiling module CPU_FETCH
+# -- Compiling module CPU_DATAPATH
+# -- Compiling module CPU_PIPELINE
+# -- Compiling module CPU_FPU32
+# -- Compiling module CHECK_FTYPE
+# -- Compiling module FADD_SPECIAL_NUMBER
+# -- Compiling module FMUL_SPECIAL_NUMBER
+# -- Compiling module FMADD_SPECIAL_NUMBER
+# -- Compiling module FDIV_SPECIAL_NUMBER
+# -- Compiling module FSQRT_SPECIAL_NUMBER
+# -- Compiling module FIND_1ST_ONE_IN_FRAC27
+# -- Compiling module FIND_1ST_ONE_IN_FRAC66
+# -- Compiling module FIND_1ST_ONE_IN_FRAC70
+# -- Compiling module SHIFT_RIGHT_FRAC27
+# -- Compiling module SHIFT_RIGHT_FRAC66
+# -- Compiling module SHIFT_RIGHT_FRAC70
+# -- Compiling module ROUND_JUDGMENT
+# -- Compiling module FRAC27_ROUND_FRAC66
+# -- Compiling module FRAC70_ROUND_FRAC132
+# -- Compiling module INNER79_FROM_FLOAT32
+# -- Compiling module FLOAT32_FROM_INNER79
+# -- Compiling module FADD_CORE
+# -- Compiling module FMUL_CORE
+# -- Compiling module FCVT_F2I
+# -- Compiling module FCVT_I2F
+# -- Compiling module CPU_CSR
+# -- Compiling module CPU_CSR_INT
+# -- Compiling module CPU_CSR_DBG
+# -- Compiling module CPU_DEBUG
+# -- Compiling module DEBUG_TOP
+# -- Compiling module DEBUG_DTM_JTAG
+# -- Compiling module DEBUG_CDC
+# -- Compiling module DEBUG_DM
+# -- Compiling module INT_GEN
+# -- Compiling module AHB_MATRIX
+# -- Compiling module AHB_MASTER_PORT
+# -- Compiling module AHB_SLAVE_PORT
+# -- Compiling module AHB_INTERCONNECT
+# -- Compiling module AHB_ARB
+# -- Compiling module AHB_ARB_RB
+# -- Compiling module ahb_lite_sdram
+# -- Compiling module sdr
+# -- Compiling module RAM
+# -- Compiling module RAM_FPGA
+# -- Compiling module RAM128KB_DP
+# -- Compiling module PORT
+# -- Compiling module UART
+# -- Compiling module sasc_top
+# -- Compiling module sasc_fifo4
+# -- Compiling module sasc_brg
+# -- Compiling module I2C
+# -- Compiling module i2c_master_top
+# -- Compiling module i2c_master_bit_ctrl
+# -- Compiling module i2c_master_byte_ctrl
+# -- Compiling module i2c_slave_model
+# -- Compiling module SPI
+# -- Compiling module simple_spi_top
+# -- Compiling module fifo4
+# -- Compiling module RISCV_TOP
+# -- Compiling module FPGA_TOP
+# -- Compiling module PLL
+# -- Compiling module tb_TOP
+# 
+# Top level modules:
+# 	tt_um_munetomomaruyama_CPU
+# 	tb_TOP
+# End time: 22:01:29 on Jun 03,2025, Elapsed time: 0:00:03
+# Errors: 0, Warnings: 0
+# End time: 22:01:34 on Jun 03,2025, Elapsed time: 0:18:10
+# Errors: 0, Warnings: 2
+# vsim -c -voptargs=""+acc"" -L altera_mf_ver work.tb_TOP 
+# Start time: 22:01:34 on Jun 03,2025
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading sv_std.std
+# Loading work.tb_TOP(fast)
+# Loading work.FPGA_TOP(fast)
+# Loading work.MCS4_CPU_CHIP(fast)
+# Loading work.MCS4_CPU_CORE(fast)
+# Loading work.MCS4_SYS(fast)
+# Loading work.MCS4_ROM(fast)
+# Loading work.ROM4KB_SP(fast)
+# Loading altera_mf_ver.altsyncram(fast)
+# Loading altera_mf_ver.altsyncram_body(fast)
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES(fast)
+# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION(fast)
+# Loading work.MCS4_RAM(fast)
+# Loading work.KEY_PRINTER(fast)
+# Loading work.MCS4_SHIFTER(fast)
+# Loading work.PLL(fast)
+# Loading altera_mf_ver.altpll(fast)
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES(fast__1)
+# Loading altera_mf_ver.MF_cycloneiii_pll(fast)
+# Loading altera_mf_ver.cda_m_cntr(fast)
+# Loading altera_mf_ver.cda_n_cntr(fast)
+# Loading altera_mf_ver.cda_scale_cntr(fast)
+# Loading altera_mf_ver.pll_iobuf(fast)
+# Loading work.RISCV_TOP(fast)
+# Loading work.mmRISC(fast)
+# Loading work.DEBUG_TOP(fast)
+# Loading work.DEBUG_DTM_JTAG(fast)
+# Loading work.DEBUG_CDC(fast)
+# Loading work.DEBUG_DM(fast)
+# Loading work.CPU_TOP(fast)
+# Loading work.CPU_FETCH(fast)
+# Loading work.CPU_DATAPATH(fast)
+# Loading work.CPU_PIPELINE(fast)
+# Loading work.CPU_CSR(fast)
+# Loading work.CPU_CSR_INT(fast)
+# Loading work.CPU_CSR_DBG(fast)
+# Loading work.CPU_DEBUG(fast)
+# Loading work.CPU_FPU32(fast)
+# Loading work.FMUL_SPECIAL_NUMBER(fast)
+# Loading work.CHECK_FTYPE(fast)
+# Loading work.FADD_SPECIAL_NUMBER(fast)
+# Loading work.FMADD_SPECIAL_NUMBER(fast)
+# Loading work.FDIV_SPECIAL_NUMBER(fast)
+# Loading work.FSQRT_SPECIAL_NUMBER(fast)
+# Loading work.INNER79_FROM_FLOAT32(fast)
+# Loading work.FIND_1ST_ONE_IN_FRAC66(fast)
+# Loading work.FMUL_CORE(fast)
+# Loading work.FRAC70_ROUND_FRAC132(fast)
+# Loading work.ROUND_JUDGMENT(fast)
+# Loading work.FIND_1ST_ONE_IN_FRAC70(fast)
+# Loading work.SHIFT_RIGHT_FRAC70(fast)
+# Loading work.FADD_CORE(fast)
+# Loading work.SHIFT_RIGHT_FRAC66(fast)
+# Loading work.FLOAT32_FROM_INNER79(fast)
+# Loading work.FRAC27_ROUND_FRAC66(fast)
+# Loading work.FIND_1ST_ONE_IN_FRAC27(fast)
+# Loading work.SHIFT_RIGHT_FRAC27(fast)
+# Loading work.FCVT_F2I(fast)
+# Loading work.FCVT_I2F(fast)
+# Loading work.BUS_M_AHB(fast)
+# Loading work.AHB_MATRIX(fast)
+# Loading work.AHB_MASTER_PORT(fast)
+# Loading work.AHB_INTERCONNECT(fast)
+# Loading work.AHB_ARB(fast)
+# Loading work.AHB_ARB_RB(fast)
+# Loading work.AHB_SLAVE_PORT(fast)
+# Loading work.CSR_MTIME(fast)
+# Loading work.ahb_lite_sdram(fast)
+# Loading work.RAM(fast)
+# Loading work.RAM_FPGA(fast)
+# Loading work.RAM128KB_DP(fast)
+# Loading altera_mf_ver.altsyncram(fast__1)
+# Loading altera_mf_ver.altsyncram_body(fast__1)
+# Loading work.PORT(fast)
+# Loading work.UART(fast)
+# Loading work.sasc_top(fast)
+# Loading work.sasc_fifo4(fast)
+# Loading work.sasc_brg(fast)
+# Loading work.INT_GEN(fast)
+# Loading work.I2C(fast)
+# Loading work.i2c_master_top(fast)
+# Loading work.i2c_master_byte_ctrl(fast)
+# Loading work.i2c_master_bit_ctrl(fast)
+# Loading work.SPI(fast)
+# Loading work.simple_spi_top(fast)
+# Loading work.fifo4(fast)
+# Loading work.i2c_slave_model(fast)
+# Loading work.sdr(fast)
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: taka  Hostname: PC-8001  ProcessID: 15560
+#           Attempting to use alternate WLF file "./wlftkc1qtd".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftkc1qtd
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_TOP.U_FPGA_TOP.U_RISCV_TOP.U_RAMI.U_RAM128KB_DP.altsyncram_component.m_default.altsyncram_inst
+#  Note : MAX 10 PLL locked to incoming clock
+# Time: 90.0 ns  Instance: tb_TOP.U_FPGA_TOP.U_PLL.altpll_component.cycloneiii_pll.pll3
+# End time: 22:06:28 on Jun 03,2025, Elapsed time: 0:04:54
+# Errors: 0, Warnings: 2

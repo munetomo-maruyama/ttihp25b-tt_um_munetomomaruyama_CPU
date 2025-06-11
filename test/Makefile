@@ -6,14 +6,14 @@ SIM ?= icarus
 #SIM ?= questa
 TOPLEVEL_LANG ?= verilog
 SRC_DIR = $(PWD)/../src
-PROJECT_SOURCES = tt_um_munetomomaruyama_CPU.v
-SYS_DIR  = $(PWD)/../test/mcs4_system
-SYSTEM_SOURCES = mcs4_cpu.v     \
-                 mcs4_mem.v     \
-                 mcs4_rom.v     \
-                 mcs4_ram.v     \
-                 mcs4_shifter.v \
-                 key_printer.v 
+PROJECT_SOURCES = tt_um_munetomomaruyama_CPU.v \
+                  mcs4_cpu_core.v
+SYS_DIR  = $(PWD)/../mcs4_system/RTL/MCS4
+SYSTEM_SOURCES = mcs4_sys.v      \
+                 mcs4_rom.v      \
+                 mcs4_ram.v      \
+                 key_printer.v   \
+                 mcs4_shifter.v
 
 ifneq ($(GATES),yes)
 
