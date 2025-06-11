@@ -1,7 +1,9 @@
 ## How it works
 The chip being manufactured by this shuttle is the MCS-4 i4004-compatible CPU chip .<br>
 Using this chip, I aim to recreate the historic calculator Busicom 141-PF. <br>
-Except for the i4004 (CPU), the i4001 (ROM), i4002 (RAM), i4003 (Shifter), and the 141-PF calculator hardware, including user interface components such as the keyboard and printer, are integrated into an FPGA.
+Except for the i4004 (CPU), the i4001 (ROM), i4002 (RAM), i4003 (Shifter), and the 141-PF calculator hardware, including user interface components such as the keyboard and printer, are integrated into an FPGA.<br>
+<br>
+In addition, the FPGA will have full-expanded ROM/RAM system, and the i4004 will calculate the first 500 digits of π (pi)!
 
 ## How to test
 To test the RTL, I have created the testbench which consists of...<br>
