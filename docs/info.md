@@ -1,11 +1,14 @@
 ## How it works
-MCS-4 i4004 CPU Compatible Chip
+The chip being manufactured by this shuttle is the MCS-4 i4004-compatible CPU chip .<br>
+Using this chip, I aim to recreate the historic calculator Busicom 141-PF. <br>
+Except for the i4004 (CPU), the i4001 (ROM), i4002 (RAM), i4003 (Shifter), and the 141-PF calculator hardware, including user interface components such as the keyboard and printer, are integrated into an FPGA.
 
 ## How to test
 To test the RTL, I have created the testbench which consists of...<br>
 (1) CPU Chip (i4004) :  src/tt_um_munetomomaruyama_CPU.v<br>
-(2) MCS-4's Memory System (i4001, i4002) : test/mcs4_system/mcs4_mem.v (includes mcs4_rom.v and mcs4_ram.v)<br>
-(3) 141-PF Caluculator Harware Model (i4003) : test/mcs4_system/key_printer.v (includes mcs4_shifter.v)<br>
+(2) MCS-4's System (i4001, i4002, i4403 and 141-PF Calculator Hardware) : mcs4_system/RTL/MCS4/*.v<br>
+(3) Testbanch for iverilog : mcs_system/SIM_iverilog (to test MCS-4 system and Printer hardware)<br>
+(4) Testbanch for Questa : mcs_system/SIM_questa (to test user interface supported by RISC-V CPU which is created by myself: mmRISC-1)<br>
 
 ## External hardware
-FPGA system is prepared.<br>
+FPGA system will be prepared.<br>
