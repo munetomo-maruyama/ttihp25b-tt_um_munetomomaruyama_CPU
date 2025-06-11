@@ -16,6 +16,6 @@ To test the RTL, I have created the testbench which consists of...<br>
 The extenal FPGA includes following items.<br>
 - ROM i4001 x 16 chips (reprogrammable by using Altera Quartus In-System Memory Content Editor) <br>
 - RAM i4002 x 32 chips<br>
-- Shiter i4003 x 3 chips<br>
-- Calculator Support Hardware <br>
-- RISC-V System for User Interface (Key Board and Printer) <br> 
+- Shifter i4003 x 3 chips<br>
+- Calculator Interface Hardware <br>
+- RISC-V System for Calculator User Interface (Key Board and Printer) <br> 
